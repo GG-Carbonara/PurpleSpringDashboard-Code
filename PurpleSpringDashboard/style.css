@@ -29,7 +29,13 @@ body{
      float: left;
  }
  .navigation-buttons{
-    float:right;
+    float:right;    
+}
+.navigation-buttons button{
+    border:none;
+    background:none;
+    padding:0.25em;
+    margin-right:2em;
 }
 
 
@@ -96,45 +102,46 @@ body{
   
   .dropdown-content button:hover {background-color: #b789f3;}
 
-.Summary{
+#Summary{
     display: none;
 }
 
-.Client-Info{
+#Client-Info{
     display: none;
 }
 
-.New-Client{
+#New-Client{
     
 }
 
-.Active-Clients{
+#Active-Clients{
 
 }
 
-.Caregivers-Data{
+#Caregivers-Data{
     display: none;
 }
 
-.Add-Caregiver{
+#Add-Caregiver{
 
 }
 
-.Active-Caregivers{
-    
+#Active-Caregivers{
+
 }
 
-.Documents{
+#Documents{
     display: none;
 }
 
-.Forms{
+#Forms{
     display: none;
 }
 
   
   
-  .show {display: block;}
+.show {display: block;}
+.showSummary{display:block;}
   
   @media only screen and (max-width:768px){
   }
