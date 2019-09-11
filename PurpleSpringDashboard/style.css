@@ -1,0 +1,147 @@
+body{
+    margin:0;
+}
+.navbar{
+    background-image:linear-gradient( to right, #624b83 0%,#8d73b8 15%, #fff 15%, #fff 100%);
+    display:block;
+    width:100%;
+    height:5vh;
+}
+
+.dropbtn {
+    background:none;
+    border: none;
+    cursor: pointer;
+    height:5vh;
+    width:0vw;
+  }
+
+  .dropdown p{
+    float: left;
+    position: relative;
+    font-size: 0.8vw;
+    color:white;
+    font-family: Verdana, sans-serif;
+    
+  }
+ #logo{
+     padding:0.25em;
+     float: left;
+ }
+ .navigation-buttons{
+    float:right;    
+}
+.navigation-buttons button{
+    border:none;
+    background:none;
+    padding:0.25em;
+    margin-right:2em;
+}
+
+
+ #Howdy{
+     background-image: url(placeholder-background.jpg);
+     background-size:cover;
+     width:100%;
+     height:15%;
+     opacity: 0.5;
+
+ }
+ 
+#Howdy-content{
+    display:block;
+    width:90%;
+    margin:auto;
+    padding-top:10%;
+    font-weight:bold;
+    font-size:12pt;
+    font-family: Verdana, sans-serif;
+    text-align:center;
+}
+
+#Howdy span{
+    padding-top:20%;
+}
+
+#Howdy-content img{
+    border-radius:50%;
+    border:solid black 5px;
+}
+
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    color: white;
+    background-image:linear-gradient( to top, #624b83,#8d73b8);
+    width: 14.85vw;
+    height:95vh;
+    overflow: hidden;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .dropdown-content button {
+      padding-left:1vw;
+    color: white;
+    text-decoration: none;
+    text-align:left;
+    background:none;
+    border:none;
+    display:block;
+    width:100%;
+    font-family: Verdana, sans-serif;
+    font-size:12pt;
+  }
+  .dropdown-content img{
+    float:left;
+  }
+  .dropdown-content span{
+    vertical-align: middle;
+
+  }
+  
+  .dropdown-content button:hover {background-color: #b789f3;}
+
+#Summary{
+    display: none;
+}
+
+#Client-Info{
+    display: none;
+}
+
+#New-Client{
+    
+}
+
+#Active-Clients{
+
+}
+
+#Caregivers-Data{
+    display: none;
+}
+
+#Add-Caregiver{
+
+}
+
+#Active-Caregivers{
+
+}
+
+#Documents{
+    display: none;
+}
+
+#Forms{
+    display: none;
+}
+
+  
+  
+.show {display: block;}
+.showSummary{display:block;}
+  
+  @media only screen and (max-width:768px){
+  }
