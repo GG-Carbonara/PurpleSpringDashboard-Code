@@ -1,10 +1,10 @@
 body{
     margin:0;
 }
-.left-navbar{
+.navbar{
     background-image:linear-gradient( to right, #624b83 0%,#8d73b8 15%, #fff 15%, #fff 100%);
     display:block;
-    width:100vw;
+    width:100%;
     height:5vh;
 }
 
@@ -19,7 +19,6 @@ body{
   .dropdown p{
     float: left;
     position: relative;
-    display: inline-block;
     font-size: 0.8vw;
     color:white;
     font-family: Verdana, sans-serif;
@@ -29,10 +28,10 @@ body{
      padding:0.25em;
      float: left;
  }
-
-.button-test{
+ .navigation-buttons{
     float:right;
 }
+
 
  #Howdy{
      background-image: url(placeholder-background.jpg);
@@ -96,6 +95,44 @@ body{
   }
   
   .dropdown-content button:hover {background-color: #b789f3;}
+
+.Summary{
+    display: none;
+}
+
+.Client-Info{
+    display: none;
+}
+
+.New-Client{
+    
+}
+
+.Active-Clients{
+
+}
+
+.Caregivers-Data{
+    display: none;
+}
+
+.Add-Caregiver{
+
+}
+
+.Active-Caregivers{
+    
+}
+
+.Documents{
+    display: none;
+}
+
+.Forms{
+    display: none;
+}
+
+  
   
   .show {display: block;}
   
