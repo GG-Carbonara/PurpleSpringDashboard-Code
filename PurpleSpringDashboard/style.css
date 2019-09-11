@@ -34,8 +34,8 @@ body{
 .navigation-buttons button{
     border:none;
     background:none;
-    padding:0.25em;
-    margin-right:2em;
+    padding:0.35vw;
+    margin-right:3vw;
 }
 
 
@@ -43,7 +43,7 @@ body{
      background-image: url(placeholder-background.jpg);
      background-size:cover;
      width:100%;
-     height:15%;
+     height:15vh;
      opacity: 0.5;
 
  }
@@ -54,9 +54,9 @@ body{
     margin:auto;
     padding-top:10%;
     font-weight:bold;
-    font-size:12pt;
+    font-size:0.9vw;
     font-family: Verdana, sans-serif;
-    text-align:center;
+    text-align:left;
 }
 
 #Howdy span{
@@ -64,8 +64,11 @@ body{
 }
 
 #Howdy-content img{
+    margin-top:5%;
     border-radius:50%;
-    border:solid black 5px;
+    border:solid black 0.4vh;
+    height:5vh;
+    width:5vh;
 }
 
  .dropdown-content {
@@ -90,20 +93,48 @@ body{
     display:block;
     width:100%;
     font-family: Verdana, sans-serif;
-    font-size:12pt;
+    font-size:0.9vw;
+    font-weight:1;
   }
   .dropdown-content img{
     float:left;
   }
   .dropdown-content span{
     vertical-align: middle;
-
+    padding-left:1vw;
   }
   
-  .dropdown-content button:hover {background-color: #b789f3;}
+
+.SidebarDropdowns{
+    padding-left:1vw;
+}
+
+#ClientInfoDropdown{
+display:block;
+}
+
+#CaregiversDataDropdown{
+    display:block;
+}
+
+#DocumentsDropdown{
+    display:block;
+}
+
+#FormsDropdown{
+    display:block;
+}
+
+.Background{
+    display: fixed;
+    
+    height:95vh;
+    background-image:linear-gradient( to top, #E6D7F8,#F3F0F7);
+}
 
 #Summary{
-    display: none;
+    display: block;
+    margin-left:14.85vw;
 }
 
 #Client-Info{
@@ -144,4 +175,5 @@ body{
 .showSummary{display:block;}
   
   @media only screen and (max-width:768px){
+
   }

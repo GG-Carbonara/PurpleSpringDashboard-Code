@@ -13,55 +13,78 @@
             <img style="height:2vw; width:2vw;"id="logo"src="placeholder.png">
             <p>Purple Spring Dashboard</p>
             <div class="navigation-buttons">
-                <button><img style="height:2vw; width:2vw;" src="settings-placeholder.png"></button>
-                <button><img style="height:2vw; width:2vw;" src="messenger-icon.png"></button>
-                <button><img style="height:2vw; width:2vw;" src="bell-placeholder.png"></button>
-                <button><img style="height:2vw; width:2vw; margin-right: -2em;" src="icon-placeholder.png"></button>
+                <button><img style="height:1.5vw; width:1.5vw;" src="settings-placeholder.png"></button>
+                <button><img style="height:1.5vw; width:1.5vw;" src="messenger-icon.png"></button>
+                <button><img style="height:1.5vw; width:1.5vw;" src="bell-placeholder.png"></button>
+                <button><img style="height:1.5vw; width:1.5vw; margin-right: -3vw;" src="icon-placeholder.png"></button>
 
             </div>    
             <div class="dropbtn-container"><button onclick="SidebarDropdownFunction()" class="dropbtn"><img style="height:1vw;width:1vw;" src="dropdown-arrow-white.png"></button></div>
                 <div id="Dropdown" class="dropdown-content">
                         <div id="Howdy">
-                                <div id="Howdy-content"><img src="icon-placeholder.png" height="30%" width="30%"><span>Howdy Sabrina!</span></div>
+                                <div id="Howdy-content"><img src="icon-placeholder.png"><span>Howdy Sabrina!</span></div>
                             </div>
                   <button onclick="SummaryDisplayFunction()"><img  src="placeholder-white.png" height="32" width="32"><span>Summary</span></button>
-                  <button><img  src="placeholder-white.png" height="32" width="32"><span>Client Info</span></button>
-                  <button><img  src="placeholder-white.png" height="32" width="32"><span>Caregivers Data</span></button>
-                  <button><img  src="placeholder-white.png" height="32" width="32"><span>Documents</span></button>
-                  <button><img  src="placeholder-white.png" height="32" width="32"><span>Forms</span></button>
-                  
+                  <button onclick="ClientInfoDropdownFunction()"><img  src="placeholder-white.png" height="32" width="32"><span>Client Info</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="dropdown-arrow-white.png"></button>
+                  <div id="ClientInfoDropdown" class="SidebarDropdowns">
+                        <button>New Client</button>
+                        <button>Active Clients</button>
+                  </div>         
+
+                  <button onclick="CaregiversDataDropdownFunction()"><img  src="placeholder-white.png" height="32" width="32"><span>Caregivers Data</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="dropdown-arrow-white.png"></button>
+                  <div id="CaregiversDataDropdown" class="SidebarDropdowns">
+                        <button>Add Caregiver</button>
+                        <button>Active Caregivers</button>
+                  </div>
+                  <button onclick="DocumentsDropdownFunction()"><img  src="placeholder-white.png" height="32" width="32"><span>Documents</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="dropdown-arrow-white.png"></button>
+                  <div id="DocumentsDropdown" class="SidebarDropdowns">
+                        <button>Tab 1</button>
+                        <button>Tab 2</button>
+                  </div>
+                  <button onclick="FormsDropdownFunction()"><img  src="placeholder-white.png" height="32" width="32"><span>Forms</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="dropdown-arrow-white.png"></button>
+                  <div id="FormsDropdown" class="SidebarDropdowns">
+                        <button>Tab 1</button>
+                        <button>Tab 2</button>
+                  </div>    
                 </div>
                 
               </div>
               
 </div>
-<div id="Summary">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ut perspiciatis error iure. Itaque, accusantium officiis! Eaque magni ipsam quae delectus a nostrum officiis nemo similique repellendus perferendis, ducimus saepe.
-</div>
-<div id="Client-Info">
-    Client Info
-    <div id="Add-Client">
-
-    </div>
-    <div id="Active-Clients">
-
-    </div>
-</div>
-<div id="Caregivers-Data">
-    Caregivers Data
-    <div id="Add-Caregiver">
-
+<div class="Background">
+        <div id="Summary">
+                
         </div>
-    <div id="Active-Caregivers">
-    
-    </div>
+        <div id="Client-Info">
+                Client Info
+                <div id="Add-Client">
+            
+                </div>
+                <div id="Active-Clients">
+            
+                </div>
+            </div>
+            <div id="Caregivers-Data">
+                Caregivers Data
+                <div id="Add-Caregiver">
+            
+                    </div>
+                <div id="Active-Caregivers">
+                
+                </div>
+            </div>
+            <div id="Documents">
+                Documents
+            </div>
+                <div id="Forms">
+                    Forms
+                    <form>
+                        
+                    </form>
+            </div>
 </div>
-<div id="Documents">
-    Documents
-</div>
-    <div id="Forms">
-        Forms
-</div>
+
+
 </body>
 
 </html>
