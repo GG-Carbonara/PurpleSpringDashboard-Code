@@ -1,55 +1,70 @@
+
+
+function display(id){;
+    if (id.style.display == "none") {
+        id.style.display = "block";
+    } else {
+        id.style.display = "none";
+    }           
+}
+
+
+
 function SidebarDropdownFunction() {
-    document.getElementById("Dropdown").classList.toggle("show");
+    var x = document.getElementById("Dropdown");
+    display(x);
   }
 
+
   function ClientInfoDropdownFunction(){
-    var showDropdown=document.getElementById("ClientInfoDropdown");
-    if (showDropdown.style.display == "none") {
-        showDropdown.style.display = "block";
-    } else {
-        showDropdown.style.display = "none";
-    }       
+    var x = document.getElementById("ClientInfoDropdown");
+    display(x);
 }
 
 function CaregiversDataDropdownFunction(){
-    var showDropdown=document.getElementById("CaregiversDataDropdown");
-    if (showDropdown.style.display == "none") {
-        showDropdown.style.display = "block";
-    } else {
-        showDropdown.style.display = "none";
-    }       
+    var x = document.getElementById("CaregiversDataDropdown");
+    display(x);
 }
 
 function DocumentsDropdownFunction(){
-    var showDropdown=document.getElementById("DocumentsDropdown");
-    if (showDropdown.style.display == "none") {
-        showDropdown.style.display = "block";
-    } else {
-        showDropdown.style.display = "none";
-    }       
+    var x = document.getElementById("DocumentsDropdown");
+    display(x);
 }
 
 
 function FormsDropdownFunction(){
-    var showDropdown=document.getElementById("FormsDropdown");
-    if (showDropdown.style.display == "none") {
-        showDropdown.style.display = "block";
-    } else {
-        showDropdown.style.display = "none";
-    }       
+    var x = document.getElementById("FormsDropdown");
+    display(x);
 }
-
 
 
 function SummaryDisplayFunction(){
-    var showDropdown=document.getElementById("Summary");
-    if (showDropdown.style.display == "none") {
-        showDropdown.style.display = "block";
-    } else {
-        showDropdown.style.display = "none";
-    }        
+    var x = document.getElementById("Summary");
+    display(x);
+
 }
 
-function isActive(){
-    
+document.addEventListener('DOMContentLoaded', function() {
+    SummaryDisplayFunction();
+    SidebarDropdownFunction();
+    SummaryDisplayFunction();
+    SidebarDropdownFunction();
+}, false);
+
+window.onload = initDate;
+function initDate() {
+     var dayName = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday");
+     var monthName = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+     var now = new Date();
+     var dateString = dayName[now.getDay()] + ", " + monthName[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();
+     document.getElementById("displayDate"). innerHTML = dateString;
 }
+
+
+
+
+
+
+// function isActive(){
+    
+// }
