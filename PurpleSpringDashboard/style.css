@@ -29,22 +29,23 @@ body{
      float: left;
  }
  .navigation-buttons{
-    float:right;    
+    float:right; 
 }
 .navigation-buttons button{
     border:none;
     background:none;
-    padding:0.35vw;
-    margin-right:3vw;
+    padding-top:1vh;
+    margin-right:2vw;
 }
 
 
  #Howdy{
-     background-image: url(placeholder-background.jpg);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(0,0,0,0.7) 100%), url(placeholder-background.jpg) repeat 0 0;
      background-size:cover;
      width:100%;
      height:15vh;
-     opacity: 0.5;
+     margin-bottom:1vh;
+     
 
  }
  
@@ -132,13 +133,60 @@ display:block;
     background-image:linear-gradient( to top, #E6D7F8,#F3F0F7);
 }
 
-.date-bar{
-margin-left:14.85vw;
-height:5vh;
+.tabLocation{
+    margin-left:14.85vw;
+    height:5vh;
+    font-family:sans-serif;
+    color:#414141;
+    font-size:1.5vw;
+    padding:0.5vw;
+    padding-top:1vw;
+}
+
+#displayDate{
+    float:right;
+    color:#624b83;
+    padding:0.5vw;
+    font-size: 1.2vw;
+    font-family:sans-serif;
 }
 #Summary{
-    display: block;
     margin-left:14.85vw;
+
+}
+
+#analyticsBar{
+    font-family: sans-serif;
+    font-size:2vw;
+    color:#624b83;
+    padding-left:2.5vw;
+}
+
+#analyticsBarClients{
+    font-size:1vw;
+    float:right;
+    border-right:solid #afafaf 2px;
+    text-align:center;
+    width:8%;
+    color:#686868;
+}
+
+#analyticsBarCaregivers{
+    font-size:1vw;
+    float:right;
+    width:10%;
+    text-align:center;
+    color:#686868;
+}
+
+#analyticsBarClientTotal{
+    font-weight:bold;
+    color:#8d73b8;
+}
+
+#analyticsBarCaregiversTotal{
+    font-weight:bold;
+    color:#624b83;
 }
 
 #SummaryContent{
@@ -179,14 +227,6 @@ height:5vh;
 
 .tab{
     display:none;
-}
-
-  
-  
-.show {display: block;}
-.showSummary{display:block;}
-.changeColor{
-    background-color: #fff;
 }
   
   @media only screen and (max-width:768px){

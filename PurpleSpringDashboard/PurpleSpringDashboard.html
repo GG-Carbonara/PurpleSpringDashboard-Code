@@ -13,10 +13,10 @@
             <img style="height:2vw; width:2vw;"id="logo"src="placeholder.png">
             <p>Purple Spring Dashboard</p>
             <div class="navigation-buttons">
-                <button><img style="height:1.5vw; width:1.5vw;" src="settings-placeholder.png"></button>
-                <button><img style="height:1.5vw; width:1.5vw;" src="messenger-icon.png"></button>
-                <button><img style="height:1.5vw; width:1.5vw;" src="bell-placeholder.png"></button>
-                <button><img style="height:1.5vw; width:1.5vw; margin-right: -3vw;" src="icon-placeholder.png"></button>
+                <button><img style="height:3vh; width:3vh;" src="settings-placeholder.png"></button>
+                <button><img style="height:3vh; width:3vh;" src="messenger-icon.png"></button>
+                <button><img style="height:3vh; width:3vh;" src="bell-placeholder.png"></button>
+                <button><img style="height:3vh; width:3vh; margin-right: -2vw;" src="icon-placeholder.png"></button>
 
             </div>    
             <div class="dropbtn-container"><button onclick="SidebarDropdownFunction()" class="dropbtn"><img style="height:1vw;width:1vw;" src="dropdown-arrow-white.png"></button></div>
@@ -24,24 +24,24 @@
                         <div id="Howdy">
                                 <div id="Howdy-content"><img src="icon-placeholder.png"><span>Howdy Sabrina!</span></div>
                             </div>
-                  <button onclick="SummaryDisplayFunction()"><img  src="placeholder-white.png" height="32" width="32"><span>Summary</span></button>
-                  <button onclick="ClientInfoDropdownFunction()"><img  src="placeholder-white.png" height="32" width="32"><span>Client Info</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="dropdown-arrow-white.png"></button>
+                  <button onclick="SummaryDisplayFunction()"><img style="height:1.5vw; width:1.5vw;" src="placeholder-white.png"><span>Summary</span></button>
+                  <button onclick="ClientInfoDropdownFunction()"><img style="height:1.5vw; width:1.5vw;" src="placeholder-white.png"><span>Client Info</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="dropdown-arrow-white.png"></button>
                   <div id="ClientInfoDropdown" class="SidebarDropdowns">
                         <button>New Client</button>
                         <button>Active Clients</button>
                   </div>         
 
-                  <button onclick="CaregiversDataDropdownFunction()"><img  src="placeholder-white.png" height="32" width="32"><span>Caregivers Data</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="dropdown-arrow-white.png"></button>
+                  <button onclick="CaregiversDataDropdownFunction()"><img  style="height:1.5vw; width:1.5vw;" src="placeholder-white.png"><span>Caregivers Data</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="dropdown-arrow-white.png"></button>
                   <div id="CaregiversDataDropdown" class="SidebarDropdowns">
                         <button>Add Caregiver</button>
                         <button>Active Caregivers</button>
                   </div>
-                  <button onclick="DocumentsDropdownFunction()"><img  src="placeholder-white.png" height="32" width="32"><span>Documents</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="dropdown-arrow-white.png"></button>
+                  <button onclick="DocumentsDropdownFunction()"><img style="height:1.5vw; width:1.5vw;" src="placeholder-white.png"><span>Documents</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="dropdown-arrow-white.png"></button>
                   <div id="DocumentsDropdown" class="SidebarDropdowns">
                         <button>Tab 1</button>
                         <button>Tab 2</button>
                   </div>
-                  <button onclick="FormsDropdownFunction()"><img  src="placeholder-white.png" height="32" width="32"><span>Forms</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="dropdown-arrow-white.png"></button>
+                  <button onclick="FormsDropdownFunction()"><img style="height:1.5vw; width:1.5vw;" src="placeholder-white.png"><span>Forms</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="dropdown-arrow-white.png"></button>
                   <div id="FormsDropdown" class="SidebarDropdowns">
                         <button>Tab 1</button>
                         <button>Tab 2</button>
@@ -52,12 +52,20 @@
               
 </div>
 <div class="Background">
-        <div class="date-bar">
+        <div id="displayDate"></div>
+        <div class="tabLocation">
                 Purple Spring Dashboard / Summary   
+                
             </div>
         <div id="Summary" class="tab">
+                <div id="analyticsBar">Analytics Dashboard
+                        <div id="analyticsBarCaregivers">Active Caregivers <span id="analyticsBarCaregiversTotal">100</span></div>
+                        <div id="analyticsBarClients">Active Clients <span id="analyticsBarClientTotal">100</span></div>
+
+                </div>
+
                 <div id="SummaryContent">
-                    Bruh
+
                 </div>
 
         </div>
@@ -84,9 +92,6 @@
             </div>
                 <div id="Forms" class="tab">
                     Insert Forms Tab Here
-                    <form>
-                        
-                    </form>
             </div>
 </div>
 

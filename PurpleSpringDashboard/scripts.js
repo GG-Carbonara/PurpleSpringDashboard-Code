@@ -1,7 +1,5 @@
-// var newDate = new Date();
-// newDate.setDate(newDate.getDate() + 1);
 
-// document.getElementById('displayDate').innerHTML = (newDate.getMonth() + 1) + '/' + newDate.getDate() + '/' + newDate.getFullYear();
+
 function display(id){;
     if (id.style.display == "none") {
         id.style.display = "block";
@@ -43,8 +41,26 @@ function FormsDropdownFunction(){
 function SummaryDisplayFunction(){
     var x = document.getElementById("Summary");
     display(x);
+
 }
-SummaryDisplayFunction();
+
+document.addEventListener('DOMContentLoaded', function() {
+    SummaryDisplayFunction();
+    SidebarDropdownFunction();
+    SummaryDisplayFunction();
+    SidebarDropdownFunction();
+}, false);
+
+window.onload = initDate;
+function initDate() {
+     var dayName = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday");
+     var monthName = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+     var now = new Date();
+     var dateString = dayName[now.getDay()] + ", " + monthName[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();
+     document.getElementById("displayDate"). innerHTML = dateString;
+}
+
+
 
 
 
