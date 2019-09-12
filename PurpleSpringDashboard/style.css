@@ -40,11 +40,11 @@ body{
 
 
  #Howdy{
-    background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(0,0,0,0.7) 100%), url(placeholder-background.jpg) repeat 0 0;
+    background: linear-gradient(to bottom, #ffffffb3 0%,#000000b3 100%), url(icons/placeholder-background.jpg) repeat 0 0;
      background-size:cover;
      width:100%;
      height:15vh;
-     margin-bottom:1vh;
+     margin-bottom:2vh;
      
 
  }
@@ -67,7 +67,7 @@ body{
 #Howdy-content img{
     margin-top:5%;
     border-radius:50%;
-    border:solid black 0.4vh;
+    border:solid #8d73b8 0.4vh;
     height:5vh;
     width:5vh;
 }
@@ -96,6 +96,7 @@ body{
     font-family: Verdana, sans-serif;
     font-size:0.9vw;
     font-weight:1;
+    margin-bottom:1.5vh;
   }
   .dropdown-content img{
     float:left;
@@ -105,9 +106,28 @@ body{
     padding-left:1vw;
   }
   
+#sidebarSettings{
+    position:absolute;
+    bottom:3vh;
+    left:1vw;
+    width:80%;
+}
+
+#sidebarSettings span{
+    padding-top:2.5vh;
+    font-family: Verdana, sans-serif;
+    font-size:1.2vw;
+}
+
+
+
 
 .SidebarDropdowns{
     padding-left:1vw;
+}
+.SidebarDropdowns button{
+    margin-bottom:0.5vh;
+    font-size:0.8vw;
 }
 
 #ClientInfoDropdown{
@@ -159,7 +179,7 @@ display:block;
     font-family: sans-serif;
     font-size:2vw;
     color:#624b83;
-    padding-left:2.5vw;
+    padding:0vw 2.5vw;
 }
 
 #analyticsBarClients{
@@ -189,39 +209,79 @@ display:block;
     color:#624b83;
 }
 
-#SummaryContent{
-
+#summaryContent{
+    margin-top:10vh;
+    width:80%;
+    margin-left:2.15vw;   
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows:minmax(100px, auto);
+    grid-gap:1em;
+    justify-items:stretch;
+    align-items:stretch;
 }
 
-#Client-Info{
-
+.summaryContentBox{
+    height:15vh;
+    width:38vw;
+    padding:1vh;
+    border-radius:1vw;
+    background-color:#8d73b8;
+    color:white;
+    font-family:sans-serif;
+    font-size:1.25vw;
 }
 
-#New-Client{
+.summaryContentBox h1{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    font-size:3.5vw;
+}
+
+.summaryContentBoxImg{
+    position:relative;
+    float:right;
+    padding-top:2.5vh;
+}
+
+#clientsSignedUp{
+    background-color:#9c7ec5;
+}
+
+#incomingClients{
+    background-color:#cdbee0;
+}
+
+#caregiversOnBoard{
+    background-color:#8262b6;
+}
+
+#caregiversOnQueue{
+    background-color:#bd9ae7;
+}
+
+#new-Client{
     
 }
 
-#Active-Clients{
+#active-Clients{
 
 }
 
-#Caregivers-Data{
+#add-Caregiver{
 
 }
 
-#Add-Caregiver{
+#active-Caregivers{
 
 }
 
-#Active-Caregivers{
+#documents{
 
 }
 
-#Documents{
-
-}
-
-#Forms{
+#forms{
 
 }
 

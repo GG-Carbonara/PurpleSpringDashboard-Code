@@ -10,42 +10,44 @@
 <body>
 <div class="navbar">
         <div class="dropdown">
-            <img style="height:2vw; width:2vw;"id="logo"src="placeholder.png">
+            <img style="height:2vw; width:2vw;"id="logo"src="icons/logops.png">
             <p>Purple Spring Dashboard</p>
-            <div class="navigation-buttons">
-                <button><img style="height:3vh; width:3vh;" src="settings-placeholder.png"></button>
-                <button><img style="height:3vh; width:3vh;" src="messenger-icon.png"></button>
-                <button><img style="height:3vh; width:3vh;" src="bell-placeholder.png"></button>
-                <button><img style="height:3vh; width:3vh; margin-right: -2vw;" src="icon-placeholder.png"></button>
+            <div class="navigation-buttons"><!--add the links/functionalities-->
+                <button><img style="height:3vh; width:3vh;" src="icons/settings-placeholder.png"></button>
+                <a href="messenger.com"><button><img style="height:3vh; width:3vh;" src="icons/messenger-icon.png"></button></a>
+                <button><img style="height:3vh; width:3vh;" src="icons/bell-placeholder.png"></button><!--add dropdown here-->
+                <button><img style="border-radius:50%; height:3vh; width:3vh; margin-right: -2vw;" src="icons/icon-placeholder.png"></button>
 
             </div>    
-            <div class="dropbtn-container"><button onclick="SidebarDropdownFunction()" class="dropbtn"><img style="height:1vw;width:1vw;" src="dropdown-arrow-white.png"></button></div>
+            <div class="dropbtn-container"><button onclick="SidebarDropdownFunction()" class="dropbtn"><img style="height:1vw;width:1vw;" src="icons/dropdown-arrow-white.png"></button></div>
                 <div id="Dropdown" class="dropdown-content">
                         <div id="Howdy">
-                                <div id="Howdy-content"><img src="icon-placeholder.png"><span>Howdy Sabrina!</span></div>
+                                <div id="Howdy-content"><img src="icons/icon-placeholder.png"><span>Howdy Sabrina!</span></div>
                             </div>
-                  <button onclick="SummaryDisplayFunction()"><img style="height:1.5vw; width:1.5vw;" src="placeholder-white.png"><span>Summary</span></button>
-                  <button onclick="ClientInfoDropdownFunction()"><img style="height:1.5vw; width:1.5vw;" src="placeholder-white.png"><span>Client Info</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="dropdown-arrow-white.png"></button>
+                  <button onclick="SummaryDisplayFunction()"><img style="height:1.25vw; width:1.25vw;" src="icons/summary.png"><span>Summary</span></button>
+                  <button onclick="ClientInfoDropdownFunction()"><img style="height:1.25vw; width:1.25vw;" src="icons/info.png"><span>Client Info</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="icons/dropdown-arrow-white.png"></button>
                   <div id="ClientInfoDropdown" class="SidebarDropdowns">
                         <button>New Client</button>
                         <button>Active Clients</button>
                   </div>         
 
-                  <button onclick="CaregiversDataDropdownFunction()"><img  style="height:1.5vw; width:1.5vw;" src="placeholder-white.png"><span>Caregivers Data</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="dropdown-arrow-white.png"></button>
+                  <button onclick="CaregiversDataDropdownFunction()"><img  style="height:1.25vw; width:1.25vw;" src="icons/caregiver.png"><span>Caregivers Data</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="icons/dropdown-arrow-white.png"></button>
                   <div id="CaregiversDataDropdown" class="SidebarDropdowns">
                         <button>Add Caregiver</button>
                         <button>Active Caregivers</button>
                   </div>
-                  <button onclick="DocumentsDropdownFunction()"><img style="height:1.5vw; width:1.5vw;" src="placeholder-white.png"><span>Documents</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="dropdown-arrow-white.png"></button>
+                  <button onclick="DocumentsDropdownFunction()"><img style="height:1.25vw; width:1.25vw;" src="icons/documents.png"><span>Documents</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="icons/dropdown-arrow-white.png"></button>
                   <div id="DocumentsDropdown" class="SidebarDropdowns">
-                        <button>Tab 1</button>
-                        <button>Tab 2</button>
+                        <button>Time Sheets</button>
+                        <button>Daily Activities</button>
                   </div>
-                  <button onclick="FormsDropdownFunction()"><img style="height:1.5vw; width:1.5vw;" src="placeholder-white.png"><span>Forms</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="dropdown-arrow-white.png"></button>
+                  <button onclick="FormsDropdownFunction()"><img style="height:1.25vw; width:1.25vw;" src="icons/forms.png"><span>Forms</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="icons/dropdown-arrow-white.png"></button>
                   <div id="FormsDropdown" class="SidebarDropdowns">
-                        <button>Tab 1</button>
-                        <button>Tab 2</button>
+                        <button>Care Plan</button>
+                        <button>Service Agreement</button>
+                        <button>Schedule In-Home Assistant</button>
                   </div>    
+                  <div id="sidebarSettings"><button><img style="height:2vw; width:2vw;" src="icons/settings-placeholder-light.png"><span>Settings</span></button></div>
                 </div>
                 
               </div>
@@ -59,38 +61,39 @@
             </div>
         <div id="Summary" class="tab">
                 <div id="analyticsBar">Analytics Dashboard
-                        <div id="analyticsBarCaregivers">Active Caregivers <span id="analyticsBarCaregiversTotal">100</span></div>
-                        <div id="analyticsBarClients">Active Clients <span id="analyticsBarClientTotal">100</span></div>
-
+                        <div id="analyticsBarCaregivers">Active Caregivers <span id="analyticsBarCaregiversTotal">100</span></div> <!--link this to the database-->
+                        <div id="analyticsBarClients">Active Clients <span id="analyticsBarClientTotal">100</span></div> <!--link this to the database-->
                 </div>
-
-                <div id="SummaryContent">
-
+                <div id="summaryContent">
+                    <div id="clientsSignedUp"class="summaryContentBox"><div class="summaryContentBoxImg"><img style="height:10vh; width:10vh;" src="icons/placeholder-white.png"></div><h1>20K</h1> Clients Signed Up</div>
+                    <div id="incomingClients"class="summaryContentBox"><div class="summaryContentBoxImg"><img style="height:10vh; width:10vh;" src="icons/placeholder-white.png"></div><h1>10K</h1> Incoming Clients</div>
+                    <div id="caregiversOnBoard"class="summaryContentBox"><div class="summaryContentBoxImg"><img style="height:10vh; width:10vh;" src="icons/placeholder-white.png"></div><h1>20K</h1> Caregivers On Board</div>
+                    <div id="caregiversOnQueue"class="summaryContentBox"><div class="summaryContentBoxImg"><img style="height:10vh; width:10vh;" src="icons/placeholder-white.png"></div><h1>10K</h1> Caregivers On Queue</div>
                 </div>
 
         </div>
-        <div id="Client-Info">
+        <div id="client-Info">
                 
-                <div id="Add-Client" class="tab">
+                <div id="add-Client" class="tab">
                     Insert Add Client Tab Here
                 </div>
-                <div id="Active-Clients" class="tab">
+                <div id="active-Clients" class="tab">
                     Insert Active Clients Tab Here
                 </div>
             </div>
-            <div id="Caregivers-Data">
+            <div id="caregivers-Data">
                 
-                <div id="Add-Caregiver" class="tab">
+                <div id="add-Caregiver" class="tab">
                     Insert Add Caregiver Tab Here
                     </div>
-                <div id="Active-Caregivers" class="tab">
+                <div id="active-Caregivers" class="tab">
                     Insert Active Caregivers Tab Here
                 </div>
             </div>
-            <div id="Documents" class="tab">
+            <div id="documents" class="tab">
                 Insert Documents Tab Here
             </div>
-                <div id="Forms" class="tab">
+                <div id="forms" class="tab">
                     Insert Forms Tab Here
             </div>
 </div>
