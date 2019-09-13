@@ -90,6 +90,7 @@ body{
       padding-left:1vw;
       padding-top:0.1vw;
       padding-bottom:0.1vw;
+      cursor: pointer;
     color: white;
     text-decoration: none;
     text-align:left;
