@@ -35,7 +35,7 @@ body{
     border:none;
     background:none;
     padding-top:1vh;
-    margin-right:2vw;
+    margin-right:1vw;
 }
 
 
@@ -82,10 +82,14 @@ body{
     overflow: hidden;
     left: 0;
     z-index: 1;
+
   }
+
   
-  .dropdown-content button {
+.dropdown-content button {
       padding-left:1vw;
+      padding-top:0.1vw;
+      padding-bottom:0.1vw;
     color: white;
     text-decoration: none;
     text-align:left;
@@ -98,6 +102,13 @@ body{
     font-weight:1;
     margin-bottom:1.5vh;
   }
+
+  .dropdown button.active {
+    background-color:#9d84c4;
+    border-left:solid #624b83 0.5vw;
+      transition:  1s;
+  }
+
   .dropdown-content img{
     float:left;
   }
@@ -124,26 +135,11 @@ body{
 
 .SidebarDropdowns{
     padding-left:1vw;
+    display:none;
 }
 .SidebarDropdowns button{
     margin-bottom:0.5vh;
     font-size:0.8vw;
-}
-
-#ClientInfoDropdown{
-display:block;
-}
-
-#CaregiversDataDropdown{
-    display:block;
-}
-
-#DocumentsDropdown{
-    display:block;
-}
-
-#FormsDropdown{
-    display:block;
 }
 
 .Background{
@@ -154,7 +150,6 @@ display:block;
 }
 
 .tabLocation{
-    margin-left:14.85vw;
     height:5vh;
     font-family:sans-serif;
     color:#414141;
@@ -165,14 +160,15 @@ display:block;
 
 #displayDate{
     float:right;
+    margin-right:1vw;
     color:#624b83;
     padding:0.5vw;
     font-size: 1.2vw;
     font-family:sans-serif;
+    border-bottom:solid gray 2px;
 }
-#Summary{
-    margin-left:14.85vw;
 
+#Summary{
 }
 
 #analyticsBar{
@@ -287,6 +283,32 @@ display:block;
 
 .tab{
     display:none;
+    animation: fadeEffect 1.5s, slide 1.5s forwards;   
+}
+
+.displayed{
+    display:block;
+    animation: fadeEffect 1.5s;
+}
+
+.sidebarDisplay{
+    display:block;
+    animation: fadeEffect 1.5s, slide2 1.5s forwards;
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+@keyframes slide{
+    100% {margin-left:14.85vw;}
+}
+
+
+
+@keyframes slide2{
+    0%{margin-top:-100vh;}
+    100%{margin-top:0   vh;}
 }
   
   @media only screen and (max-width:768px){
