@@ -104,10 +104,16 @@ body{
     margin-bottom:1.5vh;
   }
 
+  .dropdown-content button:hover {
+    background-color:#8d73b8;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
   .dropdown button.active {
     background-color:#9d84c4;
-    border-left:solid #624b83 0.5vw;
-      transition:  1s;
+    border-left:solid #624b83 0.35vw;
+      transition:  0.25s;
   }
 
   .dropdown-content img{
@@ -284,17 +290,17 @@ body{
 
 .tab{
     display:none;
-    animation: fadeEffect 1.5s, slide 1.5s forwards;   
+    animation: fadeEffect 1s, slide 1s forwards;   
 }
 
 .displayed{
     display:block;
-    animation: fadeEffect 1.5s;
+    animation: fadeEffect 0.75s;
 }
 
 .sidebarDisplay{
     display:block;
-    animation: fadeEffect 1.5s, slide2 1.5s forwards;
+    animation: fadeEffect 1s, slide2 1s forwards;
 }
 @keyframes fadeEffect {
     from {opacity: 0;}
