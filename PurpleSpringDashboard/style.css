@@ -102,12 +102,12 @@ body{
     font-size:0.9vw;
     font-weight:1;
     margin-bottom:1.5vh;
+    transition: all 0.15s ease-out;
   }
 
   .dropdown-content button:hover {
     background-color:#8d73b8;
-    transition-duration: 0.1s;
-    transition-timing-function: ease-in-out;
+    transition-duration: 0.15s ease;
 }
 
   .dropdown button.active {
