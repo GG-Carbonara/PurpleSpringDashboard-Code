@@ -44,11 +44,35 @@ function SummaryDisplayFunction(){
 
 }
 
+function ClientInfoDisplayFunction(){
+    var x = document.getElementById("new-Client");
+    display(x);
+}
+
+function ActiveClientsDisplayFunction(){
+    var x = document.getElementById("active-Clients");
+    display(x);
+}
+
+function AddCaregiverDisplayFunction(){
+    var x = document.getElementById("add-Caregiver");
+    display(x);
+}
+
+function ActiveCaregiversDisplayFunction(){
+    var x = document.getElementById("active-Caregivers");
+    display(x);
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     SummaryDisplayFunction();
     SidebarDropdownFunction();
     SummaryDisplayFunction();
     SidebarDropdownFunction();
+    ClientInfoDisplayFunction();
+    ActiveClientsDisplayFunction();
+    AddCaregiverDisplayFunction();
+    ActiveCaregiversDisplayFunction();
 }, false);
 
 window.onload = initDate;

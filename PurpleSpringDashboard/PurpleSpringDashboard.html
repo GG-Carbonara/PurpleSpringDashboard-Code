@@ -11,7 +11,7 @@
 <div class="navbar">
         <div class="dropdown">
             <img style="height:2vw; width:2vw;"id="logo"src="icons/logops.png">
-            <p>Purple Spring nruh</p>
+            <p>Purple Spring bruh</p>
             <div class="navigation-buttons"><!--add the links/functionalities-->
                 <button><img style="height:3vh; width:3vh;" src="icons/settings-placeholder.png"></button>
                 <a href="messenger.com"><button><img style="height:3vh; width:3vh;" src="icons/messenger-icon.png"></button></a>
@@ -27,25 +27,25 @@
                   <button onclick="SummaryDisplayFunction()"><img style="height:1.25vw; width:1.25vw;" src="icons/summary.png"><span>Summary</span></button>
                   <button onclick="ClientInfoDropdownFunction()"><img style="height:1.25vw; width:1.25vw;" src="icons/info.png"><span>Client Info</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="icons/dropdown-arrow-white.png"></button>
                   <div id="ClientInfoDropdown" class="SidebarDropdowns">
-                        <button>New Client</button>
-                        <button>Active Clients</button>
+                        <button onclick="ClientInfoDisplayFunction()">New Client</button>
+                        <button onclick="ActiveClientsDisplayFunction()">Active Clients</button>
                   </div>         
 
                   <button onclick="CaregiversDataDropdownFunction()"><img  style="height:1.25vw; width:1.25vw;" src="icons/caregiver.png"><span>Caregivers Data</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="icons/dropdown-arrow-white.png"></button>
                   <div id="CaregiversDataDropdown" class="SidebarDropdowns">
-                        <button>Add Caregiver</button>
-                        <button>Active Caregivers</button>
+                        <button onclick="AddCaregiverDisplayFunction()">Add Caregiver</button>
+                        <button onclick="ActiveCaregiversDisplayFunction()">Active Caregivers</button>
                   </div>
                   <button onclick="DocumentsDropdownFunction()"><img style="height:1.25vw; width:1.25vw;" src="icons/documents.png"><span>Documents</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="icons/dropdown-arrow-white.png"></button>
                   <div id="DocumentsDropdown" class="SidebarDropdowns">
-                        <button>Time Sheets</button>
-                        <button>Daily Activities</button>
+                        <button onclick="TimeSheetsDisplayFunction()">Time Sheets</button>
+                        <button onclick="DailyActivitiesDisplayFunction()">Daily Activities</button>
                   </div>
                   <button onclick="FormsDropdownFunction()"><img style="height:1.25vw; width:1.25vw;" src="icons/forms.png"><span>Forms</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="icons/dropdown-arrow-white.png"></button>
                   <div id="FormsDropdown" class="SidebarDropdowns">
-                        <button>Care Plan</button>
-                        <button>Service Agreement</button>
-                        <button>Schedule In-Home Assistant</button>
+                        <button onclick="CarePlanDisplayFunction()">Care Plan</button>
+                        <button onclick="ServiceAgreementDisplayFunction()">Service Agreement</button>
+                        <button onclick="ScheduleAssistantDisplayFunction()">Schedule In-Home Assistant</button>
                   </div>    
                   <div id="sidebarSettings"><button><img style="height:2vw; width:2vw;" src="icons/settings-placeholder-light.png"><span>Settings</span></button></div>
                 </div>
@@ -74,7 +74,7 @@
         </div>
         <div id="client-Info">
                 
-                <div id="add-Client" class="tab">
+                <div id="new-Client" class="tab">
                     Insert Add Client Tab Here
                 </div>
                 <div id="active-Clients" class="tab">
