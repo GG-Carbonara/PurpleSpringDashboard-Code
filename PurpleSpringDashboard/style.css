@@ -73,7 +73,6 @@ body{
 }
 
  .dropdown-content {
-    display: none;
     position: absolute;
     color: white;
     background-image:linear-gradient( to top, #624b83,#8d73b8);
@@ -290,7 +289,9 @@ body{
 
 .tab{
     display:none;
-    animation: fadeEffect 1s, slide 1s forwards;   
+    animation: fadeEffect 1s, slide 1s forwards;
+    font-family:sans-serif;
+    font-size:10vh;
 }
 
 .displayed{
@@ -299,8 +300,19 @@ body{
 }
 
 .sidebarDisplay{
-    display:block;
-    animation: fadeEffect 1s, slide2 1s forwards;
+    opacity:1;
+    transition:opacity 0.75s;
+    animation: fadeEffect 0.75s, slide2 0.75s forwards;
+}
+
+.sidebarDisappear{
+    opacity:0;
+    transition: opacity 0.75s;
+    animation: fadeEffect 0.75s, slideOut 0.75s forwards;
+}
+
+.dropbtn{
+    animation:spin 2s linear;
 }
 @keyframes fadeEffect {
     from {opacity: 0;}
@@ -311,11 +323,19 @@ body{
     100% {margin-left:14.85vw;}
 }
 
-
-
 @keyframes slide2{
     0%{margin-top:-100vh;}
-    100%{margin-top:0   vh;}
+    100%{margin-top:0vh;}
+}
+
+@keyframes slideOut {
+    100%{margin-top: -100vh;}
+}
+
+@keyframes spin 
+{ 
+    0%{transform:rotate(0deg);}
+    100% {transform:rotate(180deg); } 
 }
   
   @media only screen and (max-width:768px){

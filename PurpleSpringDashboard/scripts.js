@@ -1,11 +1,12 @@
 function display(id){
     x = document.getElementById(id);
-    x.classList.toggle("displayed");        
+    x.classList.toggle("displayed");    
 }
 
 function displaySidebar(id){
     x = document.getElementById(id);
-    x.classList.toggle("sidebarDisplay");        
+    x.classList.toggle("sidebarDisplay");     
+    x.classList.toggle("sidebarDisappear");   
 }
 
 function openTabFunction(evt, tabName) {
