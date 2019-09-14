@@ -67,8 +67,9 @@ function ActiveCaregiversDisplayFunction(){
 document.addEventListener('DOMContentLoaded', function() {
     SummaryDisplayFunction();
     SidebarDropdownFunction();
-    SummaryDisplayFunction();
+    // SummaryDisplayFunction();
     SidebarDropdownFunction();
+    ClientInfoDisplayFunction();
     ClientInfoDisplayFunction();
     ActiveClientsDisplayFunction();
     AddCaregiverDisplayFunction();
