@@ -1,80 +1,31 @@
-
-
-function display(id){;
-    if (id.style.display == "none") {
-        id.style.display = "block";
-    } else {
-        id.style.display = "none";
-    }           
+function display(id){
+    x = document.getElementById(id);
+    x.classList.toggle("displayed");        
 }
 
-
-
-function SidebarDropdownFunction() {
-    var x = document.getElementById("Dropdown");
-    display(x);
-  }
-
-
-  function ClientInfoDropdownFunction(){
-    var x = document.getElementById("ClientInfoDropdown");
-    display(x);
+function displaySidebar(id){
+    x = document.getElementById(id);
+    x.classList.toggle("sidebarDisplay");        
 }
 
-function CaregiversDataDropdownFunction(){
-    var x = document.getElementById("CaregiversDataDropdown");
-    display(x);
-}
+function openTabFunction(evt, tabName) {
+    var i, tab, tabDisplayButton;
+  
+    tab = document.getElementsByClassName("tab");
+    for (i = 0; i < tab.length; i++) {
+        tab[i].style.display = "none";
+    }
+  
+    tabDisplayButton = document.getElementsByClassName("tabDisplayButton");
+    for (i = 0; i < tabDisplayButton.length; i++) {
+        tabDisplayButton[i].className = tabDisplayButton[i].className.replace(" active", " ");
+    }
+  
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }  
 
-function DocumentsDropdownFunction(){
-    var x = document.getElementById("DocumentsDropdown");
-    display(x);
-}
 
-
-function FormsDropdownFunction(){
-    var x = document.getElementById("FormsDropdown");
-    display(x);
-}
-
-
-function SummaryDisplayFunction(){
-    var x = document.getElementById("Summary");
-    display(x);
-
-}
-
-function ClientInfoDisplayFunction(){
-    var x = document.getElementById("new-Client");
-    display(x);
-}
-
-function ActiveClientsDisplayFunction(){
-    var x = document.getElementById("active-Clients");
-    display(x);
-}
-
-function AddCaregiverDisplayFunction(){
-    var x = document.getElementById("add-Caregiver");
-    display(x);
-}
-
-function ActiveCaregiversDisplayFunction(){
-    var x = document.getElementById("active-Caregivers");
-    display(x);
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    SummaryDisplayFunction();
-    SidebarDropdownFunction();
-    // SummaryDisplayFunction();
-    SidebarDropdownFunction();
-    ClientInfoDisplayFunction();
-    ClientInfoDisplayFunction();
-    ActiveClientsDisplayFunction();
-    AddCaregiverDisplayFunction();
-    ActiveCaregiversDisplayFunction();
-}, false);
 
 window.onload = initDate;
 function initDate() {
@@ -89,6 +40,9 @@ function initDate() {
 
 
 
+// document.addEventListener('DOMContentLoaded', function() {
+
+// }, false);
 
 // function isActive(){
     
