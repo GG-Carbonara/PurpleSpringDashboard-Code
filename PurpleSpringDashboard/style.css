@@ -291,7 +291,6 @@ body{
     display:none;
     animation: fadeEffect 1s, slide 1s forwards;
     font-family:sans-serif;
-    font-size:10vh;
 }
 
 .displayed{
