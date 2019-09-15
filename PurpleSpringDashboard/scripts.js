@@ -9,10 +9,10 @@ function displaySidebar(id){
     x.classList.toggle("sidebarDisappear");   
 }
 
-function openTabFunction(evt, tabName) {
+function openTabFunction(evt, tabName, tabIdentifier) {
     var i, tab, tabDisplayButton;
   
-    tab = document.getElementsByClassName("tab");
+    tab = document.getElementsByClassName("summaryTab");
     for (i = 0; i < tab.length; i++) {
         tab[i].style.display = "none";
     }
@@ -26,7 +26,13 @@ function openTabFunction(evt, tabName) {
     evt.currentTarget.className += " active";
   }  
 
+function addClientNextTab(){
+    alert('test next tab!');
+}
 
+function addClientPreviousTab(){
+    alert('test previous tab!');
+}
 
 window.onload = initDate;
 function initDate() {

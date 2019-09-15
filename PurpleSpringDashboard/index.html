@@ -55,7 +55,7 @@
 <div class="Background">
         <div id="displayDate"></div>
 
-        <div id="Summary" class="tab">
+        <div id="Summary" class="summaryTab">
                 <div class="tabLocation">
                         Purple Spring Dashboard / Summary   
                     </div>
@@ -73,46 +73,77 @@
         </div>
         <div id="client-Info">
                 
-                <div id="new-Client" class="tab">
-                    <div class="tabLocation">Purple Spring Dashboard / Client Info / New Client</div>                   
-                    Insert Add Client Tab Here
+                <div id="new-Client" class="summaryTab">
+                    <div class="tabLocation">Purple Spring Dashboard / Client Info / New Client</div>
+                    <div id="newClientBar">New Client </div>  <div id="newClientBarDetails">Enter Client Details and Submit</div>
+                    <div id="addClientBackAndSubmitButtons"><button id="addClientBackButtonTopRight" onclick="addClientPreviousTab()">Back</button><button id="addClientSubmitButtonTopRight" onclick="addClientSubmitFunction()">Submit<img id="addClientSubmitButtonTopRightImage" src="icons/dropdown-arrow-white.png"></button></div>
+                                     
+                    <div id="addClientContent">
+                        <div id="addClientProfile"class="addClientContentBox"><div class="addClientContentNumberBox"><div class="addClientContentNumber">1</div></div><h1>Client Profile</h1><p>Client Personal Information</p></div>
+                        <div id="addClientConditions"class="addClientContentBox"><div class="addClientContentNumberBox"><div class="addClientContentNumber">3</div></div><h1>Client's Conditions</h1><p>Client's Functional Limitations</p></div>
+                        <div id="addClientContactInformation"class="addClientContentBox"><div class="addClientContentNumberBox"><div class="addClientContentNumber">2</div></div><h1>Contact Information</h1><p>Client Emergency Contact Details</p></div>
+                        <div id="addClientSubmission"class="addClientContentBox"><div class="addClientContentNumberBox"><div class="addClientContentNumber">4</div></div><h1>Submission</h1><p>Review and Submit</p></div>
+                    </div>
+
+                    <div id="addClientFormsBox">
+
+                        <form id="form1">
+                            yes yes yo: <input type="text" name="idkman">
+                            <button id="form1Button"class="addClientFormsButton" onclick="addClientNextTab()">Next Step</button>
+                        </form>
+                        <form id="form2">
+                            yes yes yo: <input type="text" name="idkman">
+                            <button id="form2Button"class="addClientFormsButton" onclick="addClientNextTab()">Next Step</button>
+                        </form>
+                        <form id="form3">
+                            yes yes yo: <input type="text" name="idkman">
+                            <button id="form3Button"class="addClientFormsButton" onclick="addClientNextTab()">Next Step</button>
+                        </form>
+                        <form id="form4">
+                            yes yes yo: <input type="text" name="idkman">
+                            <button id="form4Button"class="addClientFormsButton" onclick="addClientNextTab()">Next Step</button>
+                        </form>
+
+                    </div>
+
+
                 </div>
-                <div id="active-Clients" class="tab">
+                <div id="active-Clients" class="summaryTab">
                     <div class="tabLocation">Purple Spring Dashboard / Client Info / Active Clients </div> 
                     Insert Active Clients Tab Here
                 </div>
             </div>
             <div id="caregivers-Data">
                 
-                <div id="add-Caregiver" class="tab">
+                <div id="add-Caregiver" class="summaryTab">
                     <div class="tabLocation">Purple Spring Dashboard / Caregivers Data / Add Caregiver </div>                    
                     Insert Add Caregiver Tab Here
                     </div>
-                <div id="active-Caregivers" class="tab">
+                <div id="active-Caregivers" class="summaryTab">
                     <div class="tabLocation">Purple Spring Dashboard / Caregivers Data / Active Caregivers</div>
                     Insert Active Caregivers Tab Here
                 </div>
             </div>
             <div id="documents">
-                <div id="time-Sheets" class="tab">
+                <div id="time-Sheets" class="summaryTab">
                     <div class="tabLocation">Purple Spring Dashboard / Documents / Time Sheets</div>
                     Insert Time Sheets Tab Here
                 </div>
-                <div id="daily-Activities" class="tab">
+                <div id="daily-Activities" class="summaryTab">
                     <div class="tabLocation">Purple Spring Dashboard / Documents / Daily Activities</div>
                     Insert Daily Activities Tab Here
                 </div>
             </div>
                 <div id="forms">
-                <div id="care-Plan" class="tab">
+                <div id="care-Plan" class="summaryTab">
                     <div class="tabLocation">Purple Spring Dashboard / Forms / Tab Location</div>
                     Insert Care Plan Tab Here
                 </div>
-                <div id="service-Agreement" class="tab">
+                <div id="service-Agreement" class="summaryTab">
                     <div class="tabLocation">Purple Spring Dashboard / Forms / Service Plan</div>
                     Insert Service Plan Tab Here
                 </div>
-                <div id="schedule-Assistant" class="tab">
+                <div id="schedule-Assistant" class="summaryTab">
                     <div class="tabLocation">Purple Spring Dashboard / Forms / Schedule Assistant</div>
                     Insert Schedule Assistant Tab Here
                 </div>

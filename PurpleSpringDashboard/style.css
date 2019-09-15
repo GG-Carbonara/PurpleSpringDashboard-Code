@@ -1,3 +1,7 @@
+/*replace the font sizes with this code --> font-size:calc(12px + 1.5vw); 
+  in order to set a minimum font size
+*/
+
 body{
     margin:0;
 }
@@ -187,7 +191,7 @@ body{
 #analyticsBarClients{
     font-size:1vw;
     float:right;
-    border-right:solid #afafaf 2px;
+    border-right:solid gray 2px;
     text-align:center;
     width:8%;
     color:#686868;
@@ -232,6 +236,8 @@ body{
     color:white;
     font-family:sans-serif;
     font-size:1.25vw;
+    min-height:150px;
+    min-width:200px;
 }
 
 .summaryContentBox h1{
@@ -263,8 +269,143 @@ body{
     background-color:#bd9ae7;
 }
 
-#new-Client{
+#new-Client{ 
     
+}
+
+#newClientBar{
+    width:10vw;
+    font-family: sans-serif;
+    font-size:2vw;
+    color:#624b83;
+    padding:0vw 2.5vw;
+    border-right:solid gray 2px;
+    float:left;
+}
+
+#newClientBarDetails{
+    float:left;
+    color:#3d3d3d;
+    font-family:sans-serif;
+    margin-top:1.25vh;
+    margin-left:0.5vw;
+    font-size:1vw;
+    opacity:1;
+}
+
+#addClientBackAndSubmitButtons{
+    float:right;
+    margin-right:2vw;
+}
+
+#addClientBackAndSubmitButtons button{
+    border:none;
+    font-family:sans-serif;
+    font-size:1.75vh;
+}
+
+#addClientBackButtonTopRight{
+    background-color:white;
+    border-radius:0.5vw;
+    border:solid gray 1px;
+    padding: 1vh 1vw;
+    margin-right:1vw;
+}
+
+#addClientSubmitButtonTopRight{
+    background-color:#624b83;
+    border-radius:0.5vw;
+    padding: 1vh 1vw;
+    color:white;
+
+}
+
+#addClientSubmitButtonTopRightImage{
+    padding-left:0.5vw;
+    margin:auto;
+    margin-left:0.5vw;
+    border-left:solid white 1px;
+    height:0.75vw;
+    width:0.75vw;
+    min-width:10px;
+    min-height:10px;
+
+}
+
+#addClientContent{
+    margin-top:7.5vh;
+    height:10%;
+    width:95%;
+    margin-left:1.1vw;   
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows:minmax(100px, auto);
+    column-gap:2vh;
+}
+.addClientContentBox{
+    height:9vh;
+    width:41vw;
+    border-radius:1vw;
+    background-color:#d5b5fd;
+    font-family:sans-serif;
+    font-size:1vw;
+}
+
+.addClientContentNumberBox{
+    margin-top:1.5vh;
+    margin-left:1.5vh;
+    border-radius:0.75vw;
+    height:3vw;
+    width:3vw;
+    background-color:#a384d4;
+    float:left;
+}
+
+.addClientContentNumber{
+    color:white;
+    padding-left:1.2vw;
+    padding-top:0.75vw;
+    font-size:1.25vw;
+}
+
+.addClientContentBox h1{
+    font-size:1.25vw;
+    font-weight:bold;
+    margin-left:4.5vw;
+    color:#2b2b2b;
+}
+
+.addClientContentBox p{
+    font-size:1vw;
+    margin-top:-0.5vw;
+    margin-left:4.5vw;
+    color:#2b2b2b;
+}
+
+#addClientFormsBox{
+    border-radius:0.5vw;
+    border:solid gray 1px;
+    padding:1vw;
+    width:95%;
+    height:50vh;
+    margin:auto;
+    background-color:white;
+}
+
+#form1{
+    display:none;
+}
+
+#form2{
+    display:none;
+}
+
+#form3{
+    display:none;
+}
+
+#form4{
+    display:none;
 }
 
 #active-Clients{
@@ -287,7 +428,7 @@ body{
 
 }
 
-.tab{
+.summaryTab{
     display:none;
     animation: fadeEffect 1s, slide 1s forwards;
 }
