@@ -73,7 +73,6 @@ body{
 }
 
  .dropdown-content {
-    display: none;
     position: absolute;
     color: white;
     background-image:linear-gradient( to top, #624b83,#8d73b8);
@@ -90,6 +89,7 @@ body{
       padding-left:1vw;
       padding-top:0.1vw;
       padding-bottom:0.1vw;
+      cursor: pointer;
     color: white;
     text-decoration: none;
     text-align:left;
@@ -101,12 +101,18 @@ body{
     font-size:0.9vw;
     font-weight:1;
     margin-bottom:1.5vh;
+    transition: all 0.15s ease-out;
   }
+
+  .dropdown-content button:hover {
+    background-color:#8d73b8;
+    transition-duration: 0.15s ease;
+}
 
   .dropdown button.active {
     background-color:#9d84c4;
-    border-left:solid #624b83 0.5vw;
-      transition:  1s;
+    border-left:solid #624b83 0.35vw;
+      transition:  0.25s;
   }
 
   .dropdown-content img{
@@ -283,18 +289,26 @@ body{
 
 .tab{
     display:none;
-    animation: fadeEffect 1.5s, slide 1.5s forwards;   
+    animation: fadeEffect 1s, slide 1s forwards;
 }
 
 .displayed{
     display:block;
-    animation: fadeEffect 1.5s;
+    animation: fadeEffect 0.75s;
 }
 
 .sidebarDisplay{
-    display:block;
-    animation: fadeEffect 1.5s, slide2 1.5s forwards;
+    opacity:1;
+    transition:opacity 0.75s;
+    animation: fadeEffect 0.75s, slide2 0.75s forwards;
 }
+
+.sidebarDisappear{
+    opacity:0;
+    transition: opacity 0.75s;
+    animation: fadeEffect 0.75s, slideOut 0.75s forwards;
+}
+
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -304,13 +318,15 @@ body{
     100% {margin-left:14.85vw;}
 }
 
-
-
 @keyframes slide2{
     0%{margin-top:-100vh;}
-    100%{margin-top:0   vh;}
+    100%{margin-top:0vh;}
 }
-  
-  @media only screen and (max-width:768px){
+
+@keyframes slideOut {
+    100%{margin-top: -100vh;}
+}
+
+@media only screen and (max-width:768px){
 
   }
