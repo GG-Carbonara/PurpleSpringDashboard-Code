@@ -9,7 +9,7 @@ function displaySidebar(id){
     x.classList.toggle("sidebarDisappear");   
 }
 
-function openTabFunction(evt, tabName, tabIdentifier) {
+function openTabFunction(event, tabName) {
     var i, tab, tabDisplayButton;
   
     tab = document.getElementsByClassName("summaryTab");
@@ -23,15 +23,33 @@ function openTabFunction(evt, tabName, tabIdentifier) {
     }
   
     document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
+    event.currentTarget.className += " active";
   }  
 
-function addClientNextTab(){
-    alert('test next tab!');
+function newClientNextTab(currentTab, nextTab, activeTab){
+    document.getElementById(currentTab).style.display = "none";
+    document.getElementById(nextTab).style.display = "block";
+
+    tabDisplayButton = document.getElementsByClassName("newClientContentBox");
+    for (i = 0; i < tabDisplayButton.length; i++) {
+        tabDisplayButton[i].className = tabDisplayButton[i].className.replace(" activeNewClientForm", " ");
+    }    
+    document.getElementById(activeTab).className += " activeNewClientForm";
 }
 
-function addClientPreviousTab(){
-    alert('test previous tab!');
+function newClientPreviousTab(currentTab, previousTab, activeTab){
+    document.getElementById(currentTab).style.display = "none";
+    document.getElementById(previousTab).style.display = "block";
+    
+    tabDisplayButton = document.getElementsByClassName("newClientContentBox");
+    for (i = 0; i < tabDisplayButton.length; i++) {
+        tabDisplayButton[i].className = tabDisplayButton[i].className.replace(" activeNewClientForm", " ");
+    }    
+    document.getElementById(activeTab).className += " activeNewClientForm";
+}
+
+function newClientSubmitFunction(){
+    alert('test submit forms!');
 }
 
 window.onload = initDate;
@@ -42,7 +60,6 @@ function initDate() {
      var dateString = dayName[now.getDay()] + ", " + monthName[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();
      document.getElementById("displayDate"). innerHTML = dateString;
 }
-
 
 
 

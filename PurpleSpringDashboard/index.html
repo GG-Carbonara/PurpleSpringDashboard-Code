@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="icons/favicon.ico"/>
     <script src="scripts.js"></script> 
     <title>
         Purple Spring Dashboard
@@ -9,17 +10,19 @@
 </head>
 <body>
 <div class="navbar">
-        <div class="dropdown">
+    <div class="dropdown">
             <img style="height:2vw; width:2vw;"id="logo"src="icons/logops.png">
-            <p>Purple Spring Dashboard</p>
+            <p>Purple Spring Dashboard</p>  
+            <div class="dropbtn-container"><button onclick="displaySidebar('Dropdown')" class="dropbtn"><img style="height:0.75vw;width:0.75vw;" src="icons/dropdown-arrow-white.png"></button></div>  
             <div class="navigation-buttons"><!--add the links/functionalities-->
                 <button><img style="height:3vh; width:3vh;" src="icons/settings-placeholder.png"></button>
                 <a href="messenger.com"><button><img style="height:3vh; width:3vh;" src="icons/messenger-icon.png"></button></a>
                 <button><img style="height:3vh; width:3vh;" src="icons/bell-placeholder.png"></button><!--add dropdown here-->
                 <button><img style="border-radius:50%; height:3vh; width:3vh; margin-right: -1vw;" src="icons/icon-placeholder.png"></button>
-            </div>    
-            <div class="dropbtn-container"><button onclick="displaySidebar('Dropdown')" class="dropbtn"><img style="height:1vw;width:1vw;" src="icons/dropdown-arrow-white.png"></button></div>
-                <div id="Dropdown" class="dropdown-content sidebarDisappear">
+            </div>      
+        </div>
+    </div>           
+            <div id="Dropdown" class="dropdown-content sidebarDisappear">
                         <div id="Howdy">
                                 <div id="Howdy-content"><img src="icons/icon-placeholder.png"><span>Howdy Sabrina!</span></div>
                             </div>
@@ -48,10 +51,7 @@
                   </div>    
                   <div id="sidebarSettings"><button><img style="height:2vw; width:2vw;" src="icons/settings-placeholder-light.png"><span>Settings</span></button></div>
                 </div>
-                
-              </div>
-              
-</div>
+            
 <div class="Background">
         <div id="displayDate"></div>
 
@@ -76,34 +76,49 @@
                 <div id="new-Client" class="summaryTab">
                     <div class="tabLocation">Purple Spring Dashboard / Client Info / New Client</div>
                     <div id="newClientBar">New Client </div>  <div id="newClientBarDetails">Enter Client Details and Submit</div>
-                    <div id="addClientBackAndSubmitButtons"><button id="addClientBackButtonTopRight" onclick="addClientPreviousTab()">Back</button><button id="addClientSubmitButtonTopRight" onclick="addClientSubmitFunction()">Submit<img id="addClientSubmitButtonTopRightImage" src="icons/dropdown-arrow-white.png"></button></div>
+                    <div id="newClientBackAndSubmitButtons">
+                    <!--<button id="newClientBackButton" onclick="newClientPreviousTab()">Back</button>--> <!--disabled for now, moved back button to within the forms as well.-->
+                    <button id="newClientSubmitButtonTopRight" onclick="newClientSubmitFunction()">Submit<img id="newClientSubmitButtonTopRightImage" src="icons/dropdown-arrow-white.png"></button>
+                   
+                    </div>
                                      
-                    <div id="addClientContent">
-                        <div id="addClientProfile"class="addClientContentBox"><div class="addClientContentNumberBox"><div class="addClientContentNumber">1</div></div><h1>Client Profile</h1><p>Client Personal Information</p></div>
-                        <div id="addClientConditions"class="addClientContentBox"><div class="addClientContentNumberBox"><div class="addClientContentNumber">3</div></div><h1>Client's Conditions</h1><p>Client's Functional Limitations</p></div>
-                        <div id="addClientContactInformation"class="addClientContentBox"><div class="addClientContentNumberBox"><div class="addClientContentNumber">2</div></div><h1>Contact Information</h1><p>Client Emergency Contact Details</p></div>
-                        <div id="addClientSubmission"class="addClientContentBox"><div class="addClientContentNumberBox"><div class="addClientContentNumber">4</div></div><h1>Submission</h1><p>Review and Submit</p></div>
+                    <div id="newClientContent">
+                        <div id="newClientProfile"class="newClientContentBox activeNewClientForm"><div class="newClientContentNumberBox"><div class="newClientContentNumber">1</div></div><h1>Client Profile</h1><p>Client Personal Information</p></div>
+                        <div id="newClientConditions"class="newClientContentBox"><div class="newClientContentNumberBox"><div class="newClientContentNumber">3</div></div><h1>Client's Conditions</h1><p>Client's Functional Limitations</p></div>
+                        <div id="newClientContactInformation"class="newClientContentBox"><div class="newClientContentNumberBox"><div class="newClientContentNumber">2</div></div><h1>Contact Information</h1><p>Client Emergency Contact Details</p></div>
+                        <div id="newClientSubmission"class="newClientContentBox"><div class="newClientContentNumberBox"><div class="newClientContentNumber">4</div></div><h1>Submission</h1><p>Review and Submit</p></div>
                     </div>
 
-                    <div id="addClientFormsBox">
+                    <div id="newClientFormsBox">
 
-                        <form id="form1">
-                            yes yes yo: <input type="text" name="idkman">
-                            <button id="form1Button"class="addClientFormsButton" onclick="addClientNextTab()">Next Step</button>
+                        <div id="form1">
+                            <form>
+                            FORM ONE: <input type="text" name="idkman">
                         </form>
-                        <form id="form2">
-                            yes yes yo: <input type="text" name="idkman">
-                            <button id="form2Button"class="addClientFormsButton" onclick="addClientNextTab()">Next Step</button>
-                        </form>
-                        <form id="form3">
-                            yes yes yo: <input type="text" name="idkman">
-                            <button id="form3Button"class="addClientFormsButton" onclick="addClientNextTab()">Next Step</button>
-                        </form>
-                        <form id="form4">
-                            yes yes yo: <input type="text" name="idkman">
-                            <button id="form4Button"class="addClientFormsButton" onclick="addClientNextTab()">Next Step</button>
-                        </form>
-
+                            
+                            <button id="form1Button"class="newClientFormsNextButton" onclick="newClientNextTab('form1', 'form2', 'newClientContactInformation')">Next Step</button>
+                        </div>
+                        <div id="form2">
+                            <form>
+                                FORM TWO: <input type="text" name="idkman">
+                                
+                            </form>
+                            <button id="form2BackButton" class="newClientFormsBackButton" onclick="newClientPreviousTab('form2','form1','newClientProfile')">Back</button>  
+                            <button id="form2Button"class="newClientFormsNextButton" onclick="newClientNextTab('form2', 'form3', 'newClientConditions')">Next Step</button>
+                        </div>
+                        <div id="form3">
+                            <form>
+                                FORM THREE: <input type="text" name="idkman">
+                                
+                            </form>
+                            <button id="form3BackButton" class="newClientFormsBackButton" onclick="newClientPreviousTab('form3','form2','newClientContactInformation')">Back</button>  <!--add another function here that takes all the information from the form and displays it as layout-->
+                            <button id="form3Button"class="newClientFormsNextButton" onclick="newClientNextTab('form3', 'form4', 'newClientSubmission')">Next Step</button>                          
+                        </div>
+                        <div id="form4">
+                            Preview of Submission Here
+                            <button id="form4BackButton" class="newClientFormsBackButton" onclick="newClientPreviousTab('form4','form3','newClientConditions')">Back</button>
+                            <button id="newClientFormsSubmitButton" onclick="newClientSubmitFunction()">Submit</button>
+                        </div>
                     </div>
 
 
@@ -153,6 +168,5 @@
 
 </body>
 
-<script>document.getElementById("summaryTabButton").click();
-</script>
+<script>document.getElementById("summaryTabButton").click();</script>
 </html>
