@@ -19,11 +19,11 @@ function openTabFunction(event, tabName) {
   
     tabDisplayButton = document.getElementsByClassName("tabDisplayButton");
     for (i = 0; i < tabDisplayButton.length; i++) {
-        tabDisplayButton[i].className = tabDisplayButton[i].className.replace("active", " ");
+        tabDisplayButton[i].className = tabDisplayButton[i].className.replace(" active", " ");
     }
   
     document.getElementById(tabName).style.display = "block";
-    event.currentTarget.className += "active";
+    event.currentTarget.className += " active";
   }  
 
 function newClientNextTab(){
