@@ -6,9 +6,10 @@ body{
     margin:0;
 }
 .navbar{
-    background-image:linear-gradient( to right, #624b83 0%,#8d73b8 15%, #fff 15%, #fff 100%);
+    /* background-image:linear-gradient( to right, #624b83 0%,#8d73b8 15%, #fff 15%, #fff 100%); */
+    background-image:linear-gradient(to top, #624b83 0%, #8d73b8 100%);
     display:block;
-    width:100%;
+    width:15%;
     height:5vh;
 }
 
@@ -17,23 +18,23 @@ body{
     border: none;
     cursor: pointer;
     height:5vh;
-    width:0vw;
+    width:0.5vw;
   }
 
-  .dropdown p{
+  .navbar p{
     float: left;
-    position: relative;
     font-size: 0.8vw;
     color:white;
     font-family: Verdana, sans-serif;
-    
   }
  #logo{
      padding:0.25em;
      float: left;
  }
  .navigation-buttons{
-    float:right; 
+    position:absolute;
+    top:0;
+    right:0; 
 }
 .navigation-buttons button{
     border:none;
@@ -80,7 +81,7 @@ body{
     position: absolute;
     color: white;
     background-image:linear-gradient( to top, #624b83,#8d73b8);
-    width: 14.85vw;
+    width: 15%;
     height:95vh;
     overflow: hidden;
     left: 0;
@@ -113,9 +114,9 @@ body{
     transition-duration: 0.15s ease;
 }
 
-  .dropdown button.active {
+  .tabDisplayButton button.active {
     background-color:#9d84c4;
-    border-left:solid #624b83 0.35vw;
+    border-left:solid #624b83 5px;
       transition:  0.25s;
   }
 
@@ -293,18 +294,18 @@ body{
     opacity:1;
 }
 
-#addClientBackAndSubmitButtons{
+#newClientBackAndSubmitButtons{
     float:right;
     margin-right:2vw;
 }
 
-#addClientBackAndSubmitButtons button{
+#newClientBackAndSubmitButtons button{
     border:none;
     font-family:sans-serif;
     font-size:1.75vh;
 }
 
-#addClientBackButtonTopRight{
+#newClientBackButtonTopRight{
     background-color:white;
     border-radius:0.5vw;
     border:solid gray 1px;
@@ -312,7 +313,7 @@ body{
     margin-right:1vw;
 }
 
-#addClientSubmitButtonTopRight{
+#newClientSubmitButtonTopRight{
     background-color:#624b83;
     border-radius:0.5vw;
     padding: 1vh 1vw;
@@ -320,7 +321,7 @@ body{
 
 }
 
-#addClientSubmitButtonTopRightImage{
+#newClientSubmitButtonTopRightImage{
     padding-left:0.5vw;
     margin:auto;
     margin-left:0.5vw;
@@ -332,7 +333,7 @@ body{
 
 }
 
-#addClientContent{
+#newClientContent{
     margin-top:7.5vh;
     height:10%;
     width:95%;
@@ -342,8 +343,8 @@ body{
     grid-auto-rows:minmax(100px, auto);
     column-gap:2vh;
 }
-.addClientContentBox{
-    height:9vh;
+.newClientContentBox{
+    height:8vh;
     width:41vw;
     border-radius:1vw;
     background-color:#d5b5fd;
@@ -351,9 +352,9 @@ body{
     font-size:1vw;
 }
 
-.addClientContentNumberBox{
-    margin-top:1.5vh;
-    margin-left:1.5vh;
+.newClientContentNumberBox{
+    margin-top:1vh;
+    margin-left:1vh;
     border-radius:0.75vw;
     height:3vw;
     width:3vw;
@@ -361,28 +362,29 @@ body{
     float:left;
 }
 
-.addClientContentNumber{
+.newClientContentNumber{
     color:white;
     padding-left:1.2vw;
     padding-top:0.75vw;
     font-size:1.25vw;
 }
 
-.addClientContentBox h1{
+.newClientContentBox h1{
     font-size:1.25vw;
     font-weight:bold;
-    margin-left:4.5vw;
+    margin-left:4vw;
     color:#2b2b2b;
+    margin-top:1vh;
 }
 
-.addClientContentBox p{
+.newClientContentBox p{
     font-size:1vw;
-    margin-top:-0.5vw;
-    margin-left:4.5vw;
+    margin-top:-1vh;
+    margin-left:4vw;
     color:#2b2b2b;
 }
 
-#addClientFormsBox{
+#newClientFormsBox{
     border-radius:0.5vw;
     border:solid gray 1px;
     padding:1vw;
@@ -390,10 +392,23 @@ body{
     height:50vh;
     margin:auto;
     background-color:white;
+    position:relative;
+}
+
+.newClientFormsButton{
+    position: absolute;
+    bottom:1vh;
+    right:1vw;
+    border:none;
+    border-radius:0.25vw;
+    background-color: #624b83;  
+    color:white;  
+    font-family:sans-serif;
+    padding:0.5vh 0.5vw;  
 }
 
 #form1{
-    display:none;
+    display:block;
 }
 
 #form2{
@@ -456,7 +471,7 @@ body{
   }
 
 @keyframes slide{
-    100% {margin-left:14.85vw;}
+    100% {margin-left:15%;}
 }
 
 @keyframes slide2{

@@ -9,7 +9,7 @@ function displaySidebar(id){
     x.classList.toggle("sidebarDisappear");   
 }
 
-function openTabFunction(evt, tabName, tabIdentifier) {
+function openTabFunction(evt, tabName) {
     var i, tab, tabDisplayButton;
   
     tab = document.getElementsByClassName("summaryTab");
@@ -19,19 +19,23 @@ function openTabFunction(evt, tabName, tabIdentifier) {
   
     tabDisplayButton = document.getElementsByClassName("tabDisplayButton");
     for (i = 0; i < tabDisplayButton.length; i++) {
-        tabDisplayButton[i].className = tabDisplayButton[i].className.replace(" active", " ");
+        tabDisplayButton[i].className = tabDisplayButton[i].className.replace("active", " ");
     }
   
     document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
+    evt.currentTarget.className += "active";
   }  
 
-function addClientNextTab(){
+function newClientNextTab(){
     alert('test next tab!');
 }
 
-function addClientPreviousTab(){
+function newClientPreviousTab(){
     alert('test previous tab!');
+}
+
+function newClientSubmitFunction(){
+    alert('test submit forms!');
 }
 
 window.onload = initDate;
@@ -42,7 +46,6 @@ function initDate() {
      var dateString = dayName[now.getDay()] + ", " + monthName[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();
      document.getElementById("displayDate"). innerHTML = dateString;
 }
-
 
 
 
