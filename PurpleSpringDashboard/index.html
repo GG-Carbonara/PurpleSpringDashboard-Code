@@ -24,7 +24,7 @@
                         <div id="Howdy">
                                 <div id="Howdy-content"><img src="icons/icon-placeholder.png"><span>Howdy Sabrina!</span></div>
                             </div>
-                  <button id="summaryTabButton" class="tabDisplayButton" onclick="openTabFunction(event, 'Summary')"><img style="height:1.25vw; width:1.25vw;" src="icons/summary.png"><span>Summary</span></button>
+                  <button id="summaryTabButton" class="tabDisplayButton" onclick="openTabFunction('summaryTabButton', 'Summary')"><img style="height:1.25vw; width:1.25vw;" src="icons/summary.png"><span>Summary</span></button>
                   <button class="tabDisplayButton" onclick="display('ClientInfoDropdown')"><img style="height:1.25vw; width:1.25vw;" src="icons/info.png"><span>Client Info</span><img style="margin-top:0.5vw;height:0.75vw;width:0.75vw; float:right;" src="icons/dropdown-arrow-white.png"></button>
                   <div id="ClientInfoDropdown" class="SidebarDropdowns">
                         <button class="tabDisplayButton" onclick="openTabFunction(event, 'new-Client')">New Client</button>
@@ -151,6 +151,5 @@
 
 </body>
 
-<script>document.getElementById("summaryTabButton").click();
-</script>
+<script>document.getElementById("summaryTabButton").click();</script>
 </html>

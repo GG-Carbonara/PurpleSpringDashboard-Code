@@ -114,10 +114,12 @@ body{
     transition-duration: 0.15s ease;
 }
 
-  .tabDisplayButton button.active {
+
+
+  .dropdown-content button.active {
     background-color:#9d84c4;
     border-left:solid #624b83 5px;
-      transition:  0.25s;
+      /* transition: all 0.25s ease; */
   }
 
   .dropdown-content img{

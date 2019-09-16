@@ -9,7 +9,7 @@ function displaySidebar(id){
     x.classList.toggle("sidebarDisappear");   
 }
 
-function openTabFunction(evt, tabName) {
+function openTabFunction(event, tabName) {
     var i, tab, tabDisplayButton;
   
     tab = document.getElementsByClassName("summaryTab");
@@ -23,7 +23,7 @@ function openTabFunction(evt, tabName) {
     }
   
     document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += "active";
+    event.currentTarget.className += "active";
   }  
 
 function newClientNextTab(){
