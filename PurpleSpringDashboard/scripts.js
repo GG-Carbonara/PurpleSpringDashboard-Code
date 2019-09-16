@@ -1,17 +1,18 @@
 function display(id){
     x = document.getElementById(id);
-    x.classList.toggle("displayed");        
+    x.classList.toggle("displayed");    
 }
 
 function displaySidebar(id){
     x = document.getElementById(id);
-    x.classList.toggle("sidebarDisplay");        
+    x.classList.toggle("sidebarDisplay");     
+    x.classList.toggle("sidebarDisappear");   
 }
 
-function openTabFunction(evt, tabName) {
+function openTabFunction(evt, tabName, tabIdentifier) {
     var i, tab, tabDisplayButton;
   
-    tab = document.getElementsByClassName("tab");
+    tab = document.getElementsByClassName("summaryTab");
     for (i = 0; i < tab.length; i++) {
         tab[i].style.display = "none";
     }
@@ -25,7 +26,13 @@ function openTabFunction(evt, tabName) {
     evt.currentTarget.className += " active";
   }  
 
+function addClientNextTab(){
+    alert('test next tab!');
+}
 
+function addClientPreviousTab(){
+    alert('test previous tab!');
+}
 
 window.onload = initDate;
 function initDate() {
