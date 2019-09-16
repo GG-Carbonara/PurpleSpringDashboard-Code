@@ -17,8 +17,8 @@ body{
     background:none;
     border: none;
     cursor: pointer;
-    height:5vh;
-    width:0.5vw;
+    float:right;
+    margin-top:1.75vh;
   }
 
   .navbar p{
@@ -307,13 +307,14 @@ body{
     font-size:1.75vh;
 }
 
-#newClientBackButtonTopRight{
+/*disabled for now, moved back button to within the forms as well*/
+/* #newClientBackButton{
     background-color:white;
     border-radius:0.5vw;
     border:solid gray 1px;
     padding: 1vh 1vw;
     margin-right:1vw;
-}
+} */ 
 
 #newClientSubmitButtonTopRight{
     background-color:#624b83;
@@ -352,6 +353,7 @@ body{
     background-color:#d5b5fd;
     font-family:sans-serif;
     font-size:1vw;
+    transition-duration: 0.25s;
 }
 
 .newClientContentNumberBox{
@@ -362,6 +364,11 @@ body{
     width:3vw;
     background-color:#a384d4;
     float:left;
+}
+
+.activeNewClientForm{
+    background-color:white;
+    transition-duration: 0.25s;
 }
 
 .newClientContentNumber{
@@ -397,7 +404,31 @@ body{
     position:relative;
 }
 
-.newClientFormsButton{
+.newClientFormsNextButton{
+    position: absolute;
+    bottom:1vh;
+    right:1vw;
+    border:solid gray 1px;
+    border-radius:0.25vw;
+    background-color: #a384d4;  
+    color:white;  
+    font-family:sans-serif;
+    padding:0.5vh 0.5vw;  
+}
+
+.newClientFormsBackButton{
+    position: absolute;
+    bottom:1vh;
+    right:5.5vw;
+    border:solid gray 1px;
+    border-radius:0.25vw;
+    background-color: #ebdaff;  
+    color:black;  
+    font-family:sans-serif;
+    padding:0.5vh 0.5vw; 
+}
+
+#newClientFormsSubmitButton{
     position: absolute;
     bottom:1vh;
     right:1vw;
@@ -406,7 +437,7 @@ body{
     background-color: #624b83;  
     color:white;  
     font-family:sans-serif;
-    padding:0.5vh 0.5vw;  
+    padding:0.6vh 1vw;  
 }
 
 #form1{

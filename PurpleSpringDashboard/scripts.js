@@ -26,12 +26,26 @@ function openTabFunction(event, tabName) {
     event.currentTarget.className += " active";
   }  
 
-function newClientNextTab(){
-    alert('test next tab!');
+function newClientNextTab(currentTab, nextTab, activeTab){
+    document.getElementById(currentTab).style.display = "none";
+    document.getElementById(nextTab).style.display = "block";
+
+    tabDisplayButton = document.getElementsByClassName("newClientContentBox");
+    for (i = 0; i < tabDisplayButton.length; i++) {
+        tabDisplayButton[i].className = tabDisplayButton[i].className.replace(" activeNewClientForm", " ");
+    }    
+    document.getElementById(activeTab).className += " activeNewClientForm";
 }
 
-function newClientPreviousTab(){
-    alert('test previous tab!');
+function newClientPreviousTab(currentTab, previousTab, activeTab){
+    document.getElementById(currentTab).style.display = "none";
+    document.getElementById(previousTab).style.display = "block";
+    
+    tabDisplayButton = document.getElementsByClassName("newClientContentBox");
+    for (i = 0; i < tabDisplayButton.length; i++) {
+        tabDisplayButton[i].className = tabDisplayButton[i].className.replace(" activeNewClientForm", " ");
+    }    
+    document.getElementById(activeTab).className += " activeNewClientForm";
 }
 
 function newClientSubmitFunction(){
