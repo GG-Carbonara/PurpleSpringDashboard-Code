@@ -52,6 +52,11 @@ function newClientSubmitFunction(){
     alert('test submit forms!');
 }
 
+function checkIfCompleted(formName, numberOfForms, currentTab, nextTab, activeTab){
+    
+
+}
+
 window.onload = initDate;
 function initDate() {
      var dayName = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday");

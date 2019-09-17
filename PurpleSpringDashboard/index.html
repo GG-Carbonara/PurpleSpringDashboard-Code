@@ -13,7 +13,7 @@
     <div class="dropdown">
             <img style="height:2vw; width:2vw;"id="logo"src="icons/logops.png">
             <p>Purple Spring Dashboard</p>  
-            <div class="dropbtn-container"><button onclick="displaySidebar('Dropdown')" class="dropbtn"><img style="height:0.75vw;width:0.75vw;" src="icons/dropdown-arrow-white.png"></button></div>  
+            <div class="dropbtn-container"><button id="sidebarDropdownButton"onclick="displaySidebar('Dropdown')" class="dropbtn"><img style="height:0.75vw;width:0.75vw;" src="icons/dropdown-arrow-white.png"></button></div>  
             <div class="navigation-buttons"><!--add the links/functionalities-->
                 <button><img style="height:3vh; width:3vh;" src="icons/settings-placeholder.png"></button>
                 <a href="messenger.com"><button><img style="height:3vh; width:3vh;" src="icons/messenger-icon.png"></button></a>
@@ -90,43 +90,32 @@
                     </div>
 
                     <div id="newClientFormsBox">
-
-                            <div class="lowiq">Client's Profile Details:</div>
-                            <div class="loweriq">Avatar:</div>
-
+                        <form>
                         <div id="form1">
-                        
-                            <form>
-                            Name of Client: <input type="text" name="idkman" size="50vw"><br>
-                            <div class="loiq">Last Name: <input type="text" name="idkman" size="50vw"></div>
-                            <div class="IQ">Name of Client's Representative (if applicable):</div>
-                            <div class="QI"><input type="text" name="idkman" size="50vw"></div>
-                            <div class="address">Address:     <input type="text" name="idkman" size="50vw"></div>
-                        </form>
-                            
-                            <button id="form1Button"class="newClientFormsNextButton" onclick="newClientNextTab('form1', 'form2', 'newClientContactInformation')">Next Step</button>
+                                Client's Profile Details:
+                                Avatar:
+                                Name of Client: <input type="text" id="newClientFormPartOne0" size="50vw" required><br>
+                                Last Name: <input type="text" id="newClientFormPartOne1" size="50vw" required>
+                                Name of Client's Representative (if applicable)<input type="text" id="newClientFormPartOne2" size="50vw" required>
+                                Address:<input type="text" id="newClientFormPartOne3" size="50vw" required>
+                            <button type="button" id="form1Button"class="newClientFormsNextButton" onclick="newClientNextTab('form1', 'form2', 'newClientContactInformation')">Next Step</button>
                         </div>
                         <div id="form2">
-                            <form>
-                                FORM TWO: <input type="text" name="idkman">
-                                
-                            </form>
-                            <button id="form2BackButton" class="newClientFormsBackButton" onclick="newClientPreviousTab('form2','form1','newClientProfile')">Back</button>  
-                            <button id="form2Button"class="newClientFormsNextButton" onclick="newClientNextTab('form2', 'form3', 'newClientConditions')">Next Step</button>
+                                FORM TWO: <input type="text" required>
+                            <button type="button" id="form2BackButton" class="newClientFormsBackButton" onclick="newClientPreviousTab('form2','form1','newClientProfile')">Back</button>  
+                            <button type="button" id="form2Button"class="newClientFormsNextButton" onclick="newClientNextTab('form2', 'form3', 'newClientConditions')">Next Step</button>
                         </div>
-                        <div id="form3">
-                            <form>
-                                FORM THREE: <input type="text" name="idkman">
-                                
-                            </form>
-                            <button id="form3BackButton" class="newClientFormsBackButton" onclick="newClientPreviousTab('form3','form2','newClientContactInformation')">Back</button>  <!--add another function here that takes all the information from the form and displays it as layout-->
-                            <button id="form3Button"class="newClientFormsNextButton" onclick="newClientNextTab('form3', 'form4', 'newClientSubmission')">Next Step</button>                          
+                        <div id="form3">                       
+                                FORM THREE: <input type="text" required>
+                            <button type="button" id="form3BackButton" class="newClientFormsBackButton" onclick="newClientPreviousTab('form3','form2','newClientContactInformation')">Back</button>  <!--add another function here that takes all the information from the form and displays it as layout-->
+                            <button type="button" id="form3Button"class="newClientFormsNextButton" onclick="newClientNextTab('form3', 'form4', 'newClientSubmission')">Next Step</button>                          
                         </div>
-                        <div id="form4">
+                        <div id="form4" required>
                             Preview of Submission Here
-                            <button id="form4BackButton" class="newClientFormsBackButton" onclick="newClientPreviousTab('form4','form3','newClientConditions')">Back</button>
-                            <button id="newClientFormsSubmitButton" onclick="newClientSubmitFunction()">Submit</button>
+                            <button type="button" id="form4BackButton" class="newClientFormsBackButton" onclick="newClientPreviousTab('form4','form3','newClientConditions')">Back</button>
+                            <input type="submit" id="newClientFormsSubmitButton" value="Submit" onclick="newClientSubmitFunction()">
                         </div>
+                        </form>
                     </div>
 
 
@@ -176,5 +165,5 @@
 
 </body>
 
-<script>document.getElementById("summaryTabButton").click();</script>
+<script>document.getElementById("summaryTabButton").click(); document.getElementById("sidebarDropdownButton").click();</script>
 </html>
