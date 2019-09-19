@@ -11,14 +11,14 @@
 <body>
 <div class="navbar">
     <div class="dropdown">
-            <img style="height:2vw; width:2vw;"id="logo"src="icons/logops.png">
+            <img style="height:1.75vw; width:1.75vw;"id="logo"src="icons/logops.png">
             <p>Purple Spring Dashboard</p>  
-            <div class="dropbtn-container"><button id="sidebarDropdownButton"onclick="displaySidebar('Dropdown')" class="dropbtn"><img style="height:0.75vw;width:0.75vw;" src="icons/dropdown-arrow-white.png"></button></div>  
+            <div class="dropbtn-container"><button id="sidebarDropdownButton"onclick="displaySidebar('Dropdown')" class="dropbtn"><img style="height:0.5vw;width:0.5vw;" src="icons/dropdown-arrow-white.png"></button></div>  
             <div class="navigation-buttons"><!--add the links/functionalities-->
-                <button><img style="height:3vh; width:3vh;" src="icons/settings-placeholder.png"></button>
-                <a href="messenger.com"><button><img style="height:3vh; width:3vh;" src="icons/messenger-icon.png"></button></a>
-                <button><img style="height:3vh; width:3vh;" src="icons/bell-placeholder.png"></button><!--add dropdown here-->
-                <button><img style="border-radius:50%; height:3vh; width:3vh; margin-right: -1vw;" src="icons/icon-placeholder.png"></button>
+                <button><img style="height:1.5vw; width:1.5vw;" src="icons/settings-placeholder.png"></button>
+                <a href="messenger.com"><button><img style="height:1.5vw; width:1.5vw;" src="icons/messenger-icon.png"></button></a>
+                <button><img style="height:1.5vw; width:1.5vw;" src="icons/bell-placeholder.png"></button><!--add dropdown here-->
+                <button><img style="border-radius:50%; height:1.5vw; width:1.5vw; margin-right: -1vw;" src="icons/icon-placeholder.png"></button>
             </div>      
         </div>
     </div>           
@@ -53,15 +53,15 @@
                 </div>
             
 <div class="Background">
-        <div id="displayDate"></div>
+        
 
         <div id="Summary" class="summaryTab">
                 <div class="tabLocation">
-                        Purple Spring Dashboard / Summary   
+                        Purple Spring Dashboard / Summary   <div id="displayDate"></div>
                     </div>
                 <div id="analyticsBar">Analytics Dashboard
-                        <div id="analyticsBarCaregivers">Active Caregivers <span id="analyticsBarCaregiversTotal">100</span></div> <!--link this to the database-->
-                        <div id="analyticsBarClients">Active Clients <span id="analyticsBarClientTotal">100</span></div> <!--link this to the database-->
+                        <div id="analyticsBarCaregivers">Active Caregivers <br><span id="analyticsBarCaregiversTotal">100</span></div> <!--link this to the database-->
+                        <div id="analyticsBarClients">Active Clients <br><span id="analyticsBarClientTotal">100</span></div> <!--link this to the database-->
                 </div>
                 <div id="summaryContent">
                     <div id="clientsSignedUp"class="summaryContentBox"><div class="summaryContentBoxImg"><img style="height:10vh; width:10vh;" src="icons/placeholder-white.png"></div><h1>20K</h1> Clients Signed Up</div>
@@ -92,12 +92,12 @@
                     <div id="newClientFormsBox">
                         <form>
                         <div id="form1">
-                                Client's Profile Details:
+                                <!-- Client's Profile Details:
                                 Avatar:
                                 Name of Client: <input type="text" id="newClientFormPartOne0" size="50vw" required><br>
                                 Last Name: <input type="text" id="newClientFormPartOne1" size="50vw" required>
                                 Name of Client's Representative (if applicable)<input type="text" id="newClientFormPartOne2" size="50vw" required>
-                                Address:<input type="text" id="newClientFormPartOne3" size="50vw" required>
+                                Address:<input type="text" id="newClientFormPartOne3" size="50vw" required> -->
                             <button type="button" id="form1Button"class="newClientFormsNextButton" onclick="newClientNextTab('form1', 'form2', 'newClientContactInformation')">Next Step</button>
                         </div>
                         <div id="form2">
