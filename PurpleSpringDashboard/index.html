@@ -110,7 +110,18 @@
                                 <button type="button" id="form1Button"class="newClientFormsNextButton" onclick="newClientNextTab('form1', 'form2', 'newClientContactInformation')">Next Step</button>
                         </div>
                         <div id="form2">
-                                FORM TWO: <input type="text" required>
+                        <ul id="UL2">
+                            <hr>
+                                <li id="ContactInformation">Contact Information </li>
+                                <li id="PrimaryCarephysician">Primary Care Physician: <input type="text" id="newClientFormPartTwo0" size="25vw" required></li>
+                                <li id="sentences">IF ANY EMERGENCY, PLEASE CALL 911, then your care coordinator.<br><br> Emergency Contact:</li>
+                                <li id="Phony">Phone: <input type="text" id="newClientFormPartTwo1" size="25vw" required> Name: <input type="text" id="newClientFormPartTwo5" size="25vw" required></li>
+                                <li id="Adress1">Address: <input type="text" size="25vw" id="newClientFormPartTwo2" required> Phone Number: <input type="text" id="newClientFormPartTwo6" size="25vw" required></li>
+                                <li id="Preferred Hospital">Preferred Hospital: <input type="text" id="newClientFormPartTwo3" size="25vw" required> Email: <input type="text" id="newClientFormPartTwo7" size="25vw" required></li>
+                                <li id="CaregiverStaffing">Caregiver Staffing: <input type="text" id="newClientFormPartTwo4" size="25vw" required> Relationship: <input type="text" id="newClientFormPartTwo8" size="25vw" required></li>
+                                <li id="Requirements">Requirements:</li>  
+                                <hr align="center">
+                            </ul>
                             <button type="button" id="form2BackButton" class="newClientFormsBackButton" onclick="newClientPreviousTab('form2','form1','newClientProfile')">Back</button>  
                             <button type="button" id="form2Button"class="newClientFormsNextButton" onclick="newClientNextTab('form2', 'form3', 'newClientConditions')">Next Step</button>
                         </div>

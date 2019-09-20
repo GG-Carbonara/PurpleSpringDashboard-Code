@@ -565,7 +565,9 @@ body{
 #checkbox2{
     margin-left:0.5vw;
 }
-
+#UL2{
+    list-style-type:none; 
+}
 /*
 #Last-name{
     margin-top:0.5vw;
@@ -618,7 +620,81 @@ body{
 
 #form2{
     display:none;
+    margin-left:5vw;
+    width:60vw;
+    font-family:sans-serif;
+    font-size:1vw;
+    color:gray;
 }
+#ContactInformation{
+    font-size:1.5vw;
+}
+#newClientFormPartTwo0{
+    margin-left:0.5vw;
+    margin-top:1vw;
+    border-radius: 0.4vw
+    
+}
+#PrimaryCarephysician{
+    margin-top:1vw;
+}
+#newClientFormPartTwo1{
+    margin-top:1vw;
+    border-radius:0.4vw;
+    margin-left:8vw;
+}
+#Phony{
+    
+}
+#Address1{
+    margin-top:3vw;
+}
+#newClientFormPartTwo2{
+    margin-left:7.3vw;
+    margin-top:1.5vw;
+    border-radius: 0.4vw;
+}
+#PreferredHospital{
+    margin-top:3vw;
+}
+#newClientFormPartTwo3{
+    margin-left:2.9vw;
+    margin-top:1.5vw;
+    border-radius: 0.4vw;
+}
+#CaregiverStaffing{
+    margin-top:1.5vw;
+}
+#Requirements{
+    
+}
+#newClientFormPartTwo4{
+    
+    border-radius:0.4vw;
+    margin-left:3vw;
+}
+#sentences{
+    margin-left:28vw;
+    font-size:1.2vw;
+}
+#newClientFormPartTwo5{
+    border-radius: 0.4vw;
+    margin-left: 5vw;
+    
+}
+#newClientFormPartTwo6{
+    border-radius:0.4vw;
+    margin-left:0.9vw;
+}
+#newClientFormPartTwo7{
+    margin-left:5.1vw;
+    border-radius:0.4vw ;
+}
+#newClientFormPartTwo8{
+    border-radius:0.4vw;
+    margin-left:2vw;
+}
+
 
 #form3{
     display:none;
