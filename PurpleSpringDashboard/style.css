@@ -11,6 +11,8 @@ body{
     display:block;
     width:15%;
     height:5vh;
+    
+    
 }
 
 .dropbtn {
@@ -131,10 +133,11 @@ body{
   }
   
 #sidebarSettings{
-    position:absolute;
+    position: absolute;;
     bottom:3vh;
     left:1vw;
     width:80%;
+    
 }
 
 #sidebarSettings span{
@@ -175,10 +178,10 @@ body{
     float:right;
     margin-right:1vw;
     color:#624b83;
-    padding:0.5vw;
-    font-size: 1.2vw;
+    padding:0.25vw;
+    font-size: 1vw;
     font-family:sans-serif;
-    border-bottom:solid gray 2px;
+    border-bottom:solid gray 1px;
 }
 
 #Summary{
@@ -224,7 +227,7 @@ body{
     margin-left:2.15vw;   
     display:grid;
     grid-template-columns:1fr 1fr;
-    grid-auto-rows:minmax(100px, auto);
+    /* grid-auto-rows:minmax(100px, auto); */
     grid-gap:1em;
     justify-items:stretch;
     align-items:stretch;
@@ -339,12 +342,13 @@ body{
 #newClientContent{
     margin-top:7.5vh;
     height:10%;
-    width:95%;
-    margin-left:1.1vw;   
+    width:90%;
+    margin-left:0.5vw;   
     display:grid;
     grid-template-columns:1fr 1fr;
-    grid-auto-rows:minmax(100px, auto);
     column-gap:2vh;
+    row-gap:1vh;
+    margin-bottom:5vh;
 }
 .newClientContentBox{
     height:8vh;
@@ -359,7 +363,7 @@ body{
 .newClientContentNumberBox{
     margin-top:1vh;
     margin-left:1vh;
-    border-radius:0.75vw;
+    border-radius:0.75vmin;
     height:3vw;
     width:3vw;
     background-color:#a384d4;
@@ -398,7 +402,7 @@ body{
     border:solid gray 1px;
     padding:1vw;
     width:95%;
-    height:50vh;
+    height:52.5vh;
     margin:auto;
     background-color:white;
     position:relative;
@@ -419,7 +423,7 @@ body{
 .newClientFormsBackButton{
     position: absolute;
     bottom:1vh;
-    right:5.5vw;
+    right:8vw;
     border:solid gray 1px;
     border-radius:0.25vw;
     background-color: #ebdaff;  
@@ -442,7 +446,175 @@ body{
 
 #form1{
     display:block;
+    margin-left:5vw;
+    width:60vw;
+    font-family:sans-serif;
+    font-size:1vw;
+    color:gray;
+    
+    
+    
+    
 }
+
+#Client-Profile-Details{
+    font-family: sans-serif;
+    font-size:1.5vw;
+    color:gray;
+    font-weight: bolder;
+}
+#UL{
+    list-style-type: none;
+}
+#Avatar{
+    margin-top:0.5vw;
+}
+#NameofClient{
+    margin-top:0.3vw;
+}
+
+
+#newClientFormPartOne0{
+    margin-left:0.5vw;
+    border-radius:0.4vw;
+}
+#LastName{
+    margin-top:0.3vw;
+}
+#newClientFormPartOne1{
+    margin-left:2.3vw;
+    margin-top:0.3w;
+    border-radius:0.4vw;
+}
+#newClientFormPartOne2{
+    margin-top:0.3vw;
+    margin-left:7.7vw;
+    border-radius:0.4vw;
+   
+}
+#NameofClientRepresentative{
+    margin-top:0.3vw;
+}
+#Address{
+    margin-top:0.2vw;
+}
+#newClientFormPartOne3{
+    margin-left:3.7vw;
+    margin-top:0.2vw;
+    border-radius:0.4vw;
+}
+#newClientFormPartOne4{
+    margin-left:5.4vw;
+    margin-top:0.3vw;
+    border-radius:0.4vw;
+}
+#City{
+    margin-top:0.3vw;
+}
+#State{
+    margin-top:0.3vw;
+}
+#newClientFormPartOne5{
+    margin-left:4.8vw;
+    margin-top:0.3vw;
+    border-radius:0.4vw;
+}
+#Zip-Code{
+    margin-top:0.3vw;
+}
+#newClientFormPartOne6{
+    margin-left:3vw;
+    margin-top:0.3vw;
+    border-radius:0.4vw;
+}
+#newClientFormPartOne7{
+    margin-top:0.3vw;
+    margin-left:4.9vw;
+    border-radius:0.4vw;
+}
+#DOB{
+    margin-top:0.3vw;
+}
+#newClientFormPartOne8{
+    border-radius:0.4vw;
+    margin-left:1vw;
+}
+#newClientFormPartOne9{
+    border-radius:0.4vw;
+    margin-top:0.3vw;
+    margin-left:2vw;
+}
+#newClientFormPartOne10{
+    margin-top:0.3vw;
+    border-radius:0.4vw;
+    margin-left:1.4vw;
+}
+#newClientFormPartOne11{
+    margin-top:0.3vw;
+    border-radius:0.4vw;
+    margin-left:0.8vw;
+}
+#newClientFormPartOne12{
+    margin-left:1.1vw;
+    margin-top:0.3vw;
+    border-radius:0.4vw;
+}
+#checkbox1{
+    margin-left:0.5vw;
+}
+#checkbox2{
+    margin-left:0.5vw;
+}
+
+/*
+#Last-name{
+    margin-top:0.5vw;
+    margin-left:1.8vw;
+}
+#NameofClient-Representative{
+    margin-top:0.5vw;
+    margin-left:1.7vw;
+}
+#textbox{
+    margin-left:6.7vw;
+    margin-top:0.5vw;
+}
+#Name{
+    margin-top:4vw;
+    margin-left:0.2vw;
+}
+
+#address{
+    margin-top:0.5vw;
+    margin-left:2.9vw;
+}
+#city{
+    margin-top:0.5vw;
+    margin-left:4.65vw;
+}
+#state{
+    margin-top:0.5vw;
+    margin-left:4.1vw;
+    float:auto;
+    
+}
+#ZipCode{
+    margin-top:0.5vw;
+    margin-left:2.55vw;
+    float:auto;
+    
+}
+#DOB{
+    margin-top:0.5vw;
+    margin-left:4.2vw;
+    float:left;
+}
+#DNR{
+    margin-left:30vw;
+    float:none;
+    
+}
+*/
 
 #form2{
     display:none;
@@ -516,6 +688,7 @@ body{
     100%{margin-top: -100vh;}
 }
 
-@media only screen and (max-width:768px){
+@media screen and (max-width:768px){    
+    
 
   }
