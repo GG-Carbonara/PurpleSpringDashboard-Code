@@ -16,12 +16,17 @@
     <div class="dropdown">
             <img style="height:1.75vw; width:1.75vw;"id="logo"src="icons/logops.png">
             <p>Purple Spring Dashboard</p>  
-            <div class="dropbtn-container"><button id="sidebarDropdownButton"onclick="displaySidebar('Dropdown')" class="dropbtn"><img style="height:0.5vw;width:0.5vw;" src="icons/dropdown-arrow-white.png"></button></div>  
-            <div class="navigation-buttons"><!--add the links/functionalities-->
-                <button><img style="height:1.5vw; width:1.5vw;" src="icons/settings-placeholder.png"></button>
-                <a href="messenger.com"><button><img style="height:1.5vw; width:1.5vw;" src="icons/messenger-icon.png"></button></a>
-                <button><img style="height:1.5vw; width:1.5vw;" src="icons/bell-placeholder.png"></button><!--add dropdown here-->
-                <button><img style="border-radius:50%; height:1.5vw; width:1.5vw; margin-right: -1vw;" src="icons/icon-placeholder.png"></button>
+            <button id="sidebarDropdownButton" onclick="displaySidebar('Dropdown')" class="dropbtn"><img style="height:0.5vw;width:0.5vw;" src="icons/dropdown-arrow-white.png"></button>
+            <div class="navigation-buttons-container"><!--add the links/functionalities-->
+                <button class="navigation-buttons"><img style="height:1.5vw; width:1.5vw;" src="icons/settings-placeholder.png"></button>
+                <button class="navigation-buttons"><img style="height:1.5vw; width:1.5vw;" src="icons/messenger-icon.png"></button>
+                <button class="navigation-buttons"><img style="height:1.5vw; width:1.5vw;" src="icons/bell-placeholder.png"></button><!--add dropdown here-->
+                <div id="userIdDropdownContainer"><button class="navigation-buttons" id="userIdDropdownButton"><img style="border-radius:50%; height:1.5vw; width:1.5vw; margin-right: -1vw;" src="icons/icon-placeholder.png"></button>
+                <div id="userIdDropdown">
+                <a href="../signup.php"><button id="addAnAccountButton" class="userIdButton">Add an Account</button></a>       <!--This should only display when the ADMIN account is logged in-->
+                <a href="../login.php"><button id="Logout Button" class="userIdButton">Logout</button></a> <!--This should delete session variables as well-->
+                </div>
+                </div>
             </div>      
         </div>
     </div>           

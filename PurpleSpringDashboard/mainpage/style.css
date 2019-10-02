@@ -4,6 +4,7 @@
 
 body{
     margin:0;
+    font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;
 }
 .navbar{
     /* background-image:linear-gradient( to right, #624b83 0%,#8d73b8 15%, #fff 15%, #fff 100%); */
@@ -34,7 +35,7 @@ body{
     margin-left:0.75vw;
     font-size: 0.95vw;
     color:white;
-    font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;
+    
     font-weight:200;
   }
  #logo{
@@ -42,17 +43,53 @@ body{
      margin-top:0.25vw;
      float: left;
  }
- .navigation-buttons{
+ .navigation-buttons-container{
     position:fixed;
     top:0;
     right:0; 
 }
-.navigation-buttons button{
+.navigation-buttons{
     border:none;
     background:none;
     padding-top:1vh;
     margin-right:1vw;
 }
+
+/* #userIdDropdownButton{
+
+} */
+
+#userIdDropdownContainer{
+    display:inline-block;
+    padding-bottom:0.6vh;
+}
+
+#userIdDropdownButton{
+    position:relative;
+}
+
+#userIdDropdown{
+    display:none;
+    position:absolute;
+    width:10vw;
+    top:5vh;
+    right:0vh;
+    background-color:#8d73b8;
+}
+
+.userIdButton{
+    width:100%;
+    text-align:center;
+    color:white;
+    border:none;
+    background:none;
+    font-size:0.9vw;
+    padding:1vh 0;  
+}
+
+.userIdButton:hover {background-color: #b995f3;}
+
+#userIdDropdownContainer:hover #userIdDropdown {display: block;}
 
 
  #Howdy{
@@ -203,7 +240,7 @@ body{
 }
 
 #analyticsBar{
-    font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;
+    
     font-size:2vw;
     color:#624b83;
     padding:0vw 2.5vw;
@@ -298,7 +335,7 @@ body{
 
 #newClientBar{
     width:8vw;
-    font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;;
+    ;
     font-size:1.5vw;
     color:#624b83;
     padding:0.5vh 1.5vw;
@@ -482,7 +519,7 @@ body{
 }
 
 .lowiq{
-    font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;;
+    ;
     font-size:1.5vw;
     color:gray;
     font-weight: bolder;
@@ -567,8 +604,6 @@ body{
     transition: opacity 0.75s;
     animation: fadeEffect 0.75s, slideOut 0.75s forwards;
 }
-
-
 
 @keyframes fadeEffect {
     from {opacity: 0;}
